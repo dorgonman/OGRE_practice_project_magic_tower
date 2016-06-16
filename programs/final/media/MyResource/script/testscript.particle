@@ -1,0 +1,11 @@
+
+myTemplateName
+{
+	quota	10
+	material	BaseWhite
+	particle_width	100
+	particle_height	100
+	cull_each	false
+	renderer	billboard
+	billboard_type	point
+}

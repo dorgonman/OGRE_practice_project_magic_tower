@@ -1,0 +1,15 @@
+
+
+vipond
+{
+  	type truetype
+  	source vipond_octic.ttf
+	size 22
+}
+
+neuropol
+{
+  	type truetype
+  	source NEUROPOL.ttf
+	size 12
+}

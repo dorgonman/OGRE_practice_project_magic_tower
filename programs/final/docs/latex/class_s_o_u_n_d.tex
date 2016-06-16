@@ -1,0 +1,134 @@
+\hypertarget{class_s_o_u_n_d}{
+\section{SOUND Class Reference}
+\label{class_s_o_u_n_d}\index{SOUND@{SOUND}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_s_o_u_n_d_ab9e20f9f885d8b3a277ac5237d1ceabf}{
+bool {\bfseries loadSound} (char $\ast$pathName)}
+\label{class_s_o_u_n_d_ab9e20f9f885d8b3a277ac5237d1ceabf}
+
+\item 
+\hypertarget{class_s_o_u_n_d_a086a7a114bb3ddddb1f3f6908a9f114e}{
+void {\bfseries addSource} (int i)}
+\label{class_s_o_u_n_d_a086a7a114bb3ddddb1f3f6908a9f114e}
+
+\item 
+\hypertarget{class_s_o_u_n_d_a9874a1ab004717156585656243974bc9}{
+bool {\bfseries init} ()}
+\label{class_s_o_u_n_d_a9874a1ab004717156585656243974bc9}
+
+\item 
+\hypertarget{class_s_o_u_n_d_aa90a94637b030b7e6dbdfeee65cc7d20}{
+bool {\bfseries isStopped} () const }
+\label{class_s_o_u_n_d_aa90a94637b030b7e6dbdfeee65cc7d20}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_s_o_u_n_d_a9ce14516de07c6c6c9c370815fe9e467}{
+int {\bfseries mBufferIndex}}
+\label{class_s_o_u_n_d_a9ce14516de07c6c6c9c370815fe9e467}
+
+\item 
+\hypertarget{class_s_o_u_n_d_a23db6da1d79da30db5f1697d9cbea68b}{
+char $\ast$ {\bfseries mFileName}}
+\label{class_s_o_u_n_d_a23db6da1d79da30db5f1697d9cbea68b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_s_o_u_n_d_a82282b535225836a84a31f8c182fe3d5}{
+ALuint {\bfseries uiBuffers} \mbox{[}22\mbox{]}}
+\label{class_s_o_u_n_d_a82282b535225836a84a31f8c182fe3d5}
+
+\item 
+\hypertarget{class_s_o_u_n_d_a5d7967b5208477b374a3880ae26ab77a}{
+ALuint {\bfseries uiSource}}
+\label{class_s_o_u_n_d_a5d7967b5208477b374a3880ae26ab77a}
+
+\item 
+\hypertarget{class_s_o_u_n_d_a127bcac3ce5726fa4b3196d44a24a825}{
+ALuint {\bfseries uiBuffer} \mbox{[}4\mbox{]}}
+\label{class_s_o_u_n_d_a127bcac3ce5726fa4b3196d44a24a825}
+
+\item 
+\hypertarget{class_s_o_u_n_d_a43be97d9ac6fd19cf7699ef9f5afbc70}{
+ALint {\bfseries iState}}
+\label{class_s_o_u_n_d_a43be97d9ac6fd19cf7699ef9f5afbc70}
+
+\item 
+\hypertarget{class_s_o_u_n_d_aa1d2c5db17651bd6cc2af4b8d076716f}{
+CWaves $\ast$ {\bfseries pWaveLoader}}
+\label{class_s_o_u_n_d_aa1d2c5db17651bd6cc2af4b8d076716f}
+
+\item 
+\hypertarget{class_s_o_u_n_d_aaf68e1f37c49cb40b7a61a4880aecebf}{
+WAVEID {\bfseries WaveID}}
+\label{class_s_o_u_n_d_aaf68e1f37c49cb40b7a61a4880aecebf}
+
+\item 
+\hypertarget{class_s_o_u_n_d_a2e69888846a58ab6f46dad631dedea47}{
+ALint {\bfseries iLoop}}
+\label{class_s_o_u_n_d_a2e69888846a58ab6f46dad631dedea47}
+
+\item 
+\hypertarget{class_s_o_u_n_d_afef36da1f658dfe7f616c1bba79d3590}{
+ALint {\bfseries iBuffersProcessed}}
+\label{class_s_o_u_n_d_afef36da1f658dfe7f616c1bba79d3590}
+
+\item 
+\hypertarget{class_s_o_u_n_d_a41a714322ff9041ccad9086d5cb01402}{
+ALint {\bfseries iTotalBuffersProcessed}}
+\label{class_s_o_u_n_d_a41a714322ff9041ccad9086d5cb01402}
+
+\item 
+\hypertarget{class_s_o_u_n_d_aa5eef80846dd17340ba3ee615c1c7f87}{
+ALint {\bfseries iQueuedBuffers}}
+\label{class_s_o_u_n_d_aa5eef80846dd17340ba3ee615c1c7f87}
+
+\item 
+\hypertarget{class_s_o_u_n_d_aa617757733d08fb0c90e2aee02c67ef0}{
+WAVEFORMATEX {\bfseries wfex}}
+\label{class_s_o_u_n_d_aa617757733d08fb0c90e2aee02c67ef0}
+
+\item 
+\hypertarget{class_s_o_u_n_d_abccb3cdff4440d791c9a2e3fbc77b77c}{
+unsigned long {\bfseries ulDataSize}}
+\label{class_s_o_u_n_d_abccb3cdff4440d791c9a2e3fbc77b77c}
+
+\item 
+\hypertarget{class_s_o_u_n_d_aba5b5324724cb90d8aa3f9d31069ba76}{
+unsigned long {\bfseries ulFrequency}}
+\label{class_s_o_u_n_d_aba5b5324724cb90d8aa3f9d31069ba76}
+
+\item 
+\hypertarget{class_s_o_u_n_d_ab9858c7e9e36af3bf8c4d0e76c13718c}{
+unsigned long {\bfseries ulFormat}}
+\label{class_s_o_u_n_d_ab9858c7e9e36af3bf8c4d0e76c13718c}
+
+\item 
+\hypertarget{class_s_o_u_n_d_a49925a922bdd7062fc9916fd86254980}{
+unsigned long {\bfseries ulBufferSize}}
+\label{class_s_o_u_n_d_a49925a922bdd7062fc9916fd86254980}
+
+\item 
+\hypertarget{class_s_o_u_n_d_a3af2648bc0569915511860ebebfcd246}{
+unsigned long {\bfseries ulBytesWritten}}
+\label{class_s_o_u_n_d_a3af2648bc0569915511860ebebfcd246}
+
+\item 
+\hypertarget{class_s_o_u_n_d_a46832ac27ae2ef80a8696d23a3d7acff}{
+void $\ast$ {\bfseries pData}}
+\label{class_s_o_u_n_d_a46832ac27ae2ef80a8696d23a3d7acff}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/sound.h\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/sound.cpp\end{DoxyCompactItemize}

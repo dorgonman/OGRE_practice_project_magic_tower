@@ -1,0 +1,49 @@
+//basic buttonGUI button
+
+material buttonMat
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+                  scene_blend alpha_blend
+			texture_unit
+			{
+				texture buttonNormal.png
+			}
+		}
+	}
+}
+
+material buttonMat.mouseOver
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+                  scene_blend alpha_blend
+			texture_unit
+			{
+   				texture buttonOver.png
+			}
+		}
+	}
+}
+
+material buttonMat.onClick
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+                  scene_blend alpha_blend
+			texture_unit
+			{
+				texture buttonOn.png
+			}
+		}
+	}
+}

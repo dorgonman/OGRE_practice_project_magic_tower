@@ -1,0 +1,170 @@
+\hypertarget{class_stage_extra}{
+\section{StageExtra Class Reference}
+\label{class_stage_extra}\index{StageExtra@{StageExtra}}
+}
+Inheritance diagram for StageExtra:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_stage_extra}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_stage_extra_a59b589cb956e97a6f98984938a9d6ac0}{
+\hyperlink{class_stage_extra_a59b589cb956e97a6f98984938a9d6ac0}{StageExtra} (\hyperlink{class_game_engine}{GameEngine} $\ast$engine)}
+\label{class_stage_extra_a59b589cb956e97a6f98984938a9d6ac0}
+
+\begin{DoxyCompactList}\small\item\em constructor of stage \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_a2a1450b01dc533b8e9ff21761f81d93c}{
+\hyperlink{class_stage_extra_a2a1450b01dc533b8e9ff21761f81d93c}{$\sim$StageExtra} ()}
+\label{class_stage_extra_a2a1450b01dc533b8e9ff21761f81d93c}
+
+\begin{DoxyCompactList}\small\item\em deconstructor of stage \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_ac75d0d02d726e5beded7a48195192937}{
+virtual bool \hyperlink{class_stage_extra_ac75d0d02d726e5beded7a48195192937}{keyPressed} (const OIS::KeyEvent \&arg)}
+\label{class_stage_extra_ac75d0d02d726e5beded7a48195192937}
+
+\begin{DoxyCompactList}\small\item\em hand on key pressed event \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_a6df94aba379a6798813dfe8c41f6f019}{
+virtual bool \hyperlink{class_stage_extra_a6df94aba379a6798813dfe8c41f6f019}{keyReleased} (const OIS::KeyEvent \&arg)}
+\label{class_stage_extra_a6df94aba379a6798813dfe8c41f6f019}
+
+\begin{DoxyCompactList}\small\item\em hand on key released event \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_afbff98919b01f6bff48d590a80c8bfba}{
+virtual bool \hyperlink{class_stage_extra_afbff98919b01f6bff48d590a80c8bfba}{keyDown} ()}
+\label{class_stage_extra_afbff98919b01f6bff48d590a80c8bfba}
+
+\begin{DoxyCompactList}\small\item\em hand on key down event(hold on a key not release) \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_a90ad0d560da1898a5486d37209db485c}{
+virtual bool \hyperlink{class_stage_extra_a90ad0d560da1898a5486d37209db485c}{mouseMoved} (const OIS::MouseEvent \&arg)}
+\label{class_stage_extra_a90ad0d560da1898a5486d37209db485c}
+
+\begin{DoxyCompactList}\small\item\em hand on mouse moved event \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_ab223c91346f95912524dbd29898312da}{
+virtual bool \hyperlink{class_stage_extra_ab223c91346f95912524dbd29898312da}{mousePressed} (const OIS::MouseEvent \&arg, OIS::MouseButtonID id)}
+\label{class_stage_extra_ab223c91346f95912524dbd29898312da}
+
+\begin{DoxyCompactList}\small\item\em hand on mouse pressed event \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_a9eed58c3dbfd4aa836a5e00c1c316f13}{
+virtual bool \hyperlink{class_stage_extra_a9eed58c3dbfd4aa836a5e00c1c316f13}{mouseReleased} (const OIS::MouseEvent \&arg, OIS::MouseButtonID id)}
+\label{class_stage_extra_a9eed58c3dbfd4aa836a5e00c1c316f13}
+
+\begin{DoxyCompactList}\small\item\em hand on mouse released event \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_aa8143d3bb85caccd212014d792096070}{
+virtual void \hyperlink{class_stage_extra_aa8143d3bb85caccd212014d792096070}{setupFaders} ()}
+\label{class_stage_extra_aa8143d3bb85caccd212014d792096070}
+
+\begin{DoxyCompactList}\small\item\em setup fader for storys \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_stage_extra_a6be9e2343bb67a61d273576e9bd85027}{
+virtual void \hyperlink{class_stage_extra_a6be9e2343bb67a61d273576e9bd85027}{doLoadingScript} ()}
+\label{class_stage_extra_a6be9e2343bb67a61d273576e9bd85027}
+
+\begin{DoxyCompactList}\small\item\em do loading script ex:create scene, camera... \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_adaadc3a934a5e362134b44cb1e224356}{
+virtual void \hyperlink{class_stage_extra_adaadc3a934a5e362134b44cb1e224356}{doBattleScript} ()}
+\label{class_stage_extra_adaadc3a934a5e362134b44cb1e224356}
+
+\begin{DoxyCompactList}\small\item\em do battle script ex:execute any game rule or AI \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_a65cc99ecaebcb2d44e8df2ca67b821d5}{
+virtual void \hyperlink{class_stage_extra_a65cc99ecaebcb2d44e8df2ca67b821d5}{doStoryScript} ()}
+\label{class_stage_extra_a65cc99ecaebcb2d44e8df2ca67b821d5}
+
+\begin{DoxyCompactList}\small\item\em do story script ex:full script control, don't enable any game rule or AI \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_ad4dde10e891f1c750736da5b95fe9870}{
+virtual void \hyperlink{class_stage_extra_ad4dde10e891f1c750736da5b95fe9870}{doFinishScript} ()}
+\label{class_stage_extra_ad4dde10e891f1c750736da5b95fe9870}
+
+\begin{DoxyCompactList}\small\item\em do finish script ex:release resource and assign script for next stage \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_accd95257c503eb317dc89733f9b8529a}{
+virtual void \hyperlink{class_stage_extra_accd95257c503eb317dc89733f9b8529a}{chooseScene} ()}
+\label{class_stage_extra_accd95257c503eb317dc89733f9b8529a}
+
+\begin{DoxyCompactList}\small\item\em create scene manager \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_a9d682927b9fa074c084ff1cddbedf4e3}{
+virtual void \hyperlink{class_stage_extra_a9d682927b9fa074c084ff1cddbedf4e3}{createCamera} ()}
+\label{class_stage_extra_a9d682927b9fa074c084ff1cddbedf4e3}
+
+\begin{DoxyCompactList}\small\item\em create camera \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_ab30f014cd876c41688ed334a7783b9ba}{
+virtual void \hyperlink{class_stage_extra_ab30f014cd876c41688ed334a7783b9ba}{createViewPort} ()}
+\label{class_stage_extra_ab30f014cd876c41688ed334a7783b9ba}
+
+\begin{DoxyCompactList}\small\item\em create view port \end{DoxyCompactList}\item 
+\hypertarget{class_stage_extra_a856a2571ae3133f8d4330104a80e3dd1}{
+virtual void \hyperlink{class_stage_extra_a856a2571ae3133f8d4330104a80e3dd1}{createScene} ()}
+\label{class_stage_extra_a856a2571ae3133f8d4330104a80e3dd1}
+
+\begin{DoxyCompactList}\small\item\em create object that will appear in scene ex: attach scene node to entity \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_stage_extra_a0c2f1ae1cb32753afbae6f559d7a80d8}{
+std::vector$<$ \hyperlink{class_sprite3_d}{Sprite3D} $\ast$ $>$ {\bfseries mMonsterArr}}
+\label{class_stage_extra_a0c2f1ae1cb32753afbae6f559d7a80d8}
+
+\item 
+\hypertarget{class_stage_extra_aba4c1fb649ff0d221ca699b460bbe7b8}{
+bool {\bfseries mZoomIn}}
+\label{class_stage_extra_aba4c1fb649ff0d221ca699b460bbe7b8}
+
+\item 
+\hypertarget{class_stage_extra_a1bd90413392b0d5e52fcf0e4272aab9f}{
+bool {\bfseries mZoomOut}}
+\label{class_stage_extra_a1bd90413392b0d5e52fcf0e4272aab9f}
+
+\item 
+\hypertarget{class_stage_extra_a39dadcc193c3b5ead86189073403181f}{
+float {\bfseries mZoomTime}}
+\label{class_stage_extra_a39dadcc193c3b5ead86189073403181f}
+
+\item 
+\hypertarget{class_stage_extra_ab61fb55ae273cde20d6c9fcd681a3bce}{
+std::map$<$ String, \hyperlink{class_f_a_d_e_r}{FADER} $\ast$ $>$ {\bfseries mFaderMap}}
+\label{class_stage_extra_ab61fb55ae273cde20d6c9fcd681a3bce}
+
+\item 
+\hypertarget{class_stage_extra_ad7cd9551acb120a47418ef906bd14688}{
+\hyperlink{class_f_a_d_e_r}{FADER} $\ast$ {\bfseries mCurFader}}
+\label{class_stage_extra_ad7cd9551acb120a47418ef906bd14688}
+
+\item 
+\hypertarget{class_stage_extra_a0be51ab990fa25a5ed1c404e2a85f21a}{
+\hyperlink{class_f_a_d_e_r}{FADER} $\ast$ {\bfseries mBackgroundFader}}
+\label{class_stage_extra_a0be51ab990fa25a5ed1c404e2a85f21a}
+
+\item 
+\hypertarget{class_stage_extra_a40146a1c1aa6658541817f52e75fdb14}{
+\hyperlink{class_m_a_p___r_e_a_d_e_r}{MAP\_\-READER} $\ast$ {\bfseries mMapReader}}
+\label{class_stage_extra_a40146a1c1aa6658541817f52e75fdb14}
+
+\item 
+\hypertarget{class_stage_extra_af9e733032313c4349b41df8ba0b4b405}{
+\hyperlink{class_game_parameter}{GameParameter} $\ast$ {\bfseries mParameter}}
+\label{class_stage_extra_af9e733032313c4349b41df8ba0b4b405}
+
+\item 
+\hypertarget{class_stage_extra_a8ffa9122b5f01293a62642aaa45a18e5}{
+\hyperlink{class_d_i_g_i_t___s_t_r_i_n_g___d_i_a_l_o_g_u_e}{DIGIT\_\-STRING\_\-DIALOGUE} $\ast$ {\bfseries mDigitDialogue}}
+\label{class_stage_extra_a8ffa9122b5f01293a62642aaa45a18e5}
+
+\item 
+\hypertarget{class_stage_extra_a26975256a8220cd4b237a1573317e9b6}{
+\hyperlink{class_b_a_r__2_d}{BAR\_\-2D} $\ast$ {\bfseries mBar2D}}
+\label{class_stage_extra_a26975256a8220cd4b237a1573317e9b6}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage.h\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/StageExtra.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/StageExtra\_\-camera.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/StageExtra\_\-input.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/StageExtra\_\-overlay.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/StageExtra\_\-scene.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/StageExtra\_\-viewport.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{class_f_a_d_e_r}{
+\section{FADER Class Reference}
+\label{class_f_a_d_e_r}\index{FADER@{FADER}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f_a_d_e_r_ae55a52ab9a75bd8789aeeab9c0e10012}{
+{\bfseries FADER} (const String \&OverlayName, const String \&InstanceName, const String \&MaterialName)}
+\label{class_f_a_d_e_r_ae55a52ab9a75bd8789aeeab9c0e10012}
+
+\item 
+\hypertarget{class_f_a_d_e_r_a691493952b787097453f534ce77ad6a3}{
+void {\bfseries startFadeIn} (double duration=1.0f, double targetAlpha=0.0f, double startAlpha=1.0f)}
+\label{class_f_a_d_e_r_a691493952b787097453f534ce77ad6a3}
+
+\item 
+\hypertarget{class_f_a_d_e_r_ab46bc35027b378414e6e912af2f17690}{
+void {\bfseries startFadeOut} (double duration=1.0f, double targetAlpha=1.0f, double startAlpha=0.0f)}
+\label{class_f_a_d_e_r_ab46bc35027b378414e6e912af2f17690}
+
+\item 
+\hypertarget{class_f_a_d_e_r_a04944a6d2bec7ce6022d37f99383e50e}{
+bool {\bfseries fade} (double time\_\-step)}
+\label{class_f_a_d_e_r_a04944a6d2bec7ce6022d37f99383e50e}
+
+\item 
+\hypertarget{class_f_a_d_e_r_ace8a731f95544937a9005c7dae350aca}{
+void {\bfseries hide} ()}
+\label{class_f_a_d_e_r_ace8a731f95544937a9005c7dae350aca}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries FADEOP} \{ {\bfseries FADE\_\-NONE}, 
+{\bfseries FADE\_\-IN}, 
+{\bfseries FADE\_\-OUT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f_a_d_e_r_a858c12e46b29311d910f6ae309a2d837}{
+double {\bfseries mTargetAlpha}}
+\label{class_f_a_d_e_r_a858c12e46b29311d910f6ae309a2d837}
+
+\item 
+\hypertarget{class_f_a_d_e_r_a254005d8dfe5b1f8831cbd90c29eb40f}{
+double {\bfseries mAlpha}}
+\label{class_f_a_d_e_r_a254005d8dfe5b1f8831cbd90c29eb40f}
+
+\item 
+\hypertarget{class_f_a_d_e_r_a907123bc15a80673fdcc1770524d8cc6}{
+double {\bfseries mCurrent\_\-duration}}
+\label{class_f_a_d_e_r_a907123bc15a80673fdcc1770524d8cc6}
+
+\item 
+\hypertarget{class_f_a_d_e_r_a5c5a57c56fad353cf1ccaa52ef3a5d75}{
+double {\bfseries mTotal\_\-duration}}
+\label{class_f_a_d_e_r_a5c5a57c56fad353cf1ccaa52ef3a5d75}
+
+\item 
+\hypertarget{class_f_a_d_e_r_aafe153a2c098939f5297e3c09834252f}{
+Overlay $\ast$ {\bfseries mOverlay}}
+\label{class_f_a_d_e_r_aafe153a2c098939f5297e3c09834252f}
+
+\item 
+\hypertarget{class_f_a_d_e_r_a3f2ad19658b53d00e315a75c912bbb65}{
+enum FADER::FADEOP {\bfseries mFadeop}}
+\label{class_f_a_d_e_r_a3f2ad19658b53d00e315a75c912bbb65}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/fader.h\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/fader.cpp\end{DoxyCompactItemize}

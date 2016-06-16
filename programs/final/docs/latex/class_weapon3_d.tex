@@ -1,0 +1,149 @@
+\hypertarget{class_weapon3_d}{
+\section{Weapon3D Class Reference}
+\label{class_weapon3_d}\index{Weapon3D@{Weapon3D}}
+}
+
+
+3D Game Programming\par
+ My Name: ±i´º·Ó Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com}  
+
+
+
+
+{\ttfamily \#include $<$Weapon3D.h$>$}
+
+Inheritance diagram for Weapon3D:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_weapon3_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_weapon3_d_ac6b8bb4df5723e09d7aa311a2a8b9001}{
+\hyperlink{class_weapon3_d_ac6b8bb4df5723e09d7aa311a2a8b9001}{Weapon3D} (\hyperlink{class_stage}{Stage} $\ast$stage)}
+\label{class_weapon3_d_ac6b8bb4df5723e09d7aa311a2a8b9001}
+
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hypertarget{class_weapon3_d_a7331efe97447250bca33202f8745e5b0}{
+\hyperlink{class_weapon3_d_a7331efe97447250bca33202f8745e5b0}{$\sim$Weapon3D} ()}
+\label{class_weapon3_d_a7331efe97447250bca33202f8745e5b0}
+
+\begin{DoxyCompactList}\small\item\em deconstructor \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_weapon3_d_a5bf9ab1fa9783db4ec928f3ab50d848a}{createBullet} (int num, string meshName)
+\begin{DoxyCompactList}\small\item\em create bullet \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_weapon3_d_a39a507270d0ca9fd1f17581cc39ce2b4}{trigger} (Ogre::Vector3 at)
+\begin{DoxyCompactList}\small\item\em fire a bullet \end{DoxyCompactList}\item 
+\hypertarget{class_weapon3_d_ae2575fa6481235c34e559b07cf9c5995}{
+virtual void \hyperlink{class_weapon3_d_ae2575fa6481235c34e559b07cf9c5995}{update} (const Ogre::FrameEvent \&evt)}
+\label{class_weapon3_d_ae2575fa6481235c34e559b07cf9c5995}
+
+\begin{DoxyCompactList}\small\item\em update all bullets in this weapon \end{DoxyCompactList}\item 
+\hypertarget{class_weapon3_d_a3098d098921fc299f8ac0d5d0d52119b}{
+virtual void \hyperlink{class_weapon3_d_a3098d098921fc299f8ac0d5d0d52119b}{setBulletSize} (Ogre::Vector3 \&scale)}
+\label{class_weapon3_d_a3098d098921fc299f8ac0d5d0d52119b}
+
+\begin{DoxyCompactList}\small\item\em size of bullets \end{DoxyCompactList}\item 
+\hypertarget{class_weapon3_d_a35fec24303b465f6bebc479f32c26298}{
+virtual void \hyperlink{class_weapon3_d_a35fec24303b465f6bebc479f32c26298}{setBulletMaterialName} (string name)}
+\label{class_weapon3_d_a35fec24303b465f6bebc479f32c26298}
+
+\begin{DoxyCompactList}\small\item\em set material \end{DoxyCompactList}\item 
+\hypertarget{class_weapon3_d_a5861454036f1cefca65132da7ac6f1f8}{
+virtual void \hyperlink{class_weapon3_d_a5861454036f1cefca65132da7ac6f1f8}{setBulletLifeTime} (float lifeTime)}
+\label{class_weapon3_d_a5861454036f1cefca65132da7ac6f1f8}
+
+\begin{DoxyCompactList}\small\item\em life time of bullets \end{DoxyCompactList}\item 
+\hypertarget{class_weapon3_d_a5efef4a2aa417e93fb726ff5775c551e}{
+virtual bool \hyperlink{class_weapon3_d_a5efef4a2aa417e93fb726ff5775c551e}{hit} (\hyperlink{class_sprite3_d}{Sprite3D} $\ast$sprite, float radius)}
+\label{class_weapon3_d_a5efef4a2aa417e93fb726ff5775c551e}
+
+\begin{DoxyCompactList}\small\item\em check if any bullet in this weapon hit a position area within a radius \end{DoxyCompactList}\item 
+\hypertarget{class_weapon3_d_a011f12605a5135a1e22c09f8d0ae543c}{
+virtual void \hyperlink{class_weapon3_d_a011f12605a5135a1e22c09f8d0ae543c}{setCoolDown} (float coolDown)}
+\label{class_weapon3_d_a011f12605a5135a1e22c09f8d0ae543c}
+
+\begin{DoxyCompactList}\small\item\em set cool down time of weapon \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_weapon3_d_a872c89e0498b3d80cad949c5a35f437c}{
+std::vector$<$ \hyperlink{class_bullet3_d}{Bullet3D} $\ast$ $>$ {\bfseries mBulletArr}}
+\label{class_weapon3_d_a872c89e0498b3d80cad949c5a35f437c}
+
+\item 
+\hypertarget{class_weapon3_d_ae49857926bc3cdf17f06c0b31a4ed513}{
+float {\bfseries mCoolDown}}
+\label{class_weapon3_d_ae49857926bc3cdf17f06c0b31a4ed513}
+
+\item 
+\hypertarget{class_weapon3_d_ad84b31303c80975c464deb02b7015a9b}{
+float {\bfseries mCurrentBulletIndex}}
+\label{class_weapon3_d_ad84b31303c80975c464deb02b7015a9b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+3D Game Programming\par
+ My Name: ±i´º·Ó Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com} 
+
+This class will compute update path and some function for bullet 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_weapon3_d_a5bf9ab1fa9783db4ec928f3ab50d848a}{
+\index{Weapon3D@{Weapon3D}!createBullet@{createBullet}}
+\index{createBullet@{createBullet}!Weapon3D@{Weapon3D}}
+\subsubsection[{createBullet}]{\setlength{\rightskip}{0pt plus 5cm}void Weapon3D::createBullet (
+\begin{DoxyParamCaption}
+\item[{int}]{num, }
+\item[{string}]{meshName}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_weapon3_d_a5bf9ab1fa9783db4ec928f3ab50d848a}
+
+
+create bullet 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & number of bullet \\
+\hline
+{\em meshName} & which mesh we used to create bullet \\
+\hline
+{\em lifeTime} & bullet's lifeTime that it can fly \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_weapon3_d_a39a507270d0ca9fd1f17581cc39ce2b4}{
+\index{Weapon3D@{Weapon3D}!trigger@{trigger}}
+\index{trigger@{trigger}!Weapon3D@{Weapon3D}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void Weapon3D::trigger (
+\begin{DoxyParamCaption}
+\item[{Ogre::Vector3}]{at}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{class_weapon3_d_a39a507270d0ca9fd1f17581cc39ce2b4}
+
+
+fire a bullet 
+
+
+\begin{DoxyParams}{Parameters}
+{\em at} & where our bullet initial position will generated \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_sprite3_d_ae85eaeb7b568fa67307583dc148d3542}{Sprite3D}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/é­”å¡”å®ˆè­·è€…/programs/final/source/Weapon3D.h\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/é­”å¡”å®ˆè­·è€…/programs/final/source/Weapon3D.cpp\end{DoxyCompactItemize}

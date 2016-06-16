@@ -1,0 +1,328 @@
+\hypertarget{class_stage}{
+\section{Stage Class Reference}
+\label{class_stage}\index{Stage@{Stage}}
+}
+
+
+3D Game Programming\par
+ My Name: �i���� Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com}  
+
+
+
+
+{\ttfamily \#include $<$Stage.h$>$}
+
+Inheritance diagram for Stage:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_stage}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_stage_a14345a1ff13124e55a9acf30c3cf2f69}{eScriptMode} \{ \par
+{\bfseries SM\_\-INITIALIZE}, 
+{\bfseries SM\_\-LOADING}, 
+{\bfseries SM\_\-BATTLE}, 
+{\bfseries SM\_\-GAME\_\-OVER}, 
+\par
+{\bfseries SM\_\-GAME\_\-WIN}, 
+{\bfseries SM\_\-STORY}, 
+{\bfseries SM\_\-FINISH}
+ \}
+\begin{DoxyCompactList}\small\item\em enum script mode, every stage have four script mode:Loading, Battle, Story, and Finish.\par
+ initialize doesn't do any thing. \end{DoxyCompactList}\item 
+enum \hyperlink{class_stage_a5146c8d23c27ff712ea1c49e8fe08f54}{eViewMode} \{ {\bfseries VM\_\-FPS}, 
+{\bfseries VM\_\-TPS}
+ \}
+\begin{DoxyCompactList}\small\item\em enum script mode, every stage have four script mode:Loading, Battle, Story, and Finish.\par
+ initialize doesn't do any thing. \end{DoxyCompactList}\item 
+enum {\bfseries eWeaponMode} \{ {\bfseries NWAY3}, 
+{\bfseries TRACE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_stage_a53d27767a54a4e15af1326786227c689}{
+\hyperlink{class_stage_a53d27767a54a4e15af1326786227c689}{Stage} (\hyperlink{class_game_engine}{GameEngine} $\ast$engine)}
+\label{class_stage_a53d27767a54a4e15af1326786227c689}
+
+\begin{DoxyCompactList}\small\item\em constructor of stage \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a5a096f71dc1cb3d789e3530f684f2d4a}{
+void \hyperlink{class_stage_a5a096f71dc1cb3d789e3530f684f2d4a}{doScript} (const Ogre::FrameEvent \&\hyperlink{class_stage_a0e9bb93fc9464908d8322f711ccda96c}{evt})}
+\label{class_stage_a5a096f71dc1cb3d789e3530f684f2d4a}
+
+\begin{DoxyCompactList}\small\item\em entry for \hyperlink{class_stage}{Stage} \end{DoxyCompactList}\item 
+\hypertarget{class_stage_ae2b3ece34a6f0965b5f6b72101546006}{
+virtual bool \hyperlink{class_stage_ae2b3ece34a6f0965b5f6b72101546006}{keyPressed} (const OIS::KeyEvent \&arg)}
+\label{class_stage_ae2b3ece34a6f0965b5f6b72101546006}
+
+\begin{DoxyCompactList}\small\item\em hand on key pressed event \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a8a5f6360e1331f4176f9d6e9dda6d0be}{
+virtual bool \hyperlink{class_stage_a8a5f6360e1331f4176f9d6e9dda6d0be}{keyReleased} (const OIS::KeyEvent \&arg)}
+\label{class_stage_a8a5f6360e1331f4176f9d6e9dda6d0be}
+
+\begin{DoxyCompactList}\small\item\em hand on key released event \end{DoxyCompactList}\item 
+\hypertarget{class_stage_aab5e70055701766f91bb549ba068152c}{
+virtual bool \hyperlink{class_stage_aab5e70055701766f91bb549ba068152c}{keyDown} ()}
+\label{class_stage_aab5e70055701766f91bb549ba068152c}
+
+\begin{DoxyCompactList}\small\item\em hand on key down event(hold on a key not release) \end{DoxyCompactList}\item 
+\hypertarget{class_stage_ace25fca9b6fe80b6c8a1b9a75858e778}{
+virtual bool \hyperlink{class_stage_ace25fca9b6fe80b6c8a1b9a75858e778}{mouseMoved} (const OIS::MouseEvent \&arg)}
+\label{class_stage_ace25fca9b6fe80b6c8a1b9a75858e778}
+
+\begin{DoxyCompactList}\small\item\em hand on mouse moved event \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a2353f23e23eb65650f619f7f44c4c0c1}{
+virtual bool \hyperlink{class_stage_a2353f23e23eb65650f619f7f44c4c0c1}{mousePressed} (const OIS::MouseEvent \&arg, OIS::MouseButtonID id)}
+\label{class_stage_a2353f23e23eb65650f619f7f44c4c0c1}
+
+\begin{DoxyCompactList}\small\item\em hand on mouse pressed event \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a53fa2ee718edc42f199174383076e033}{
+virtual bool \hyperlink{class_stage_a53fa2ee718edc42f199174383076e033}{mouseReleased} (const OIS::MouseEvent \&arg, OIS::MouseButtonID id)}
+\label{class_stage_a53fa2ee718edc42f199174383076e033}
+
+\begin{DoxyCompactList}\small\item\em hand on mouse released event \end{DoxyCompactList}\item 
+\hypertarget{class_stage_ad218c0bf0635f88eeecbd733a64ff090}{
+bool \hyperlink{class_stage_ad218c0bf0635f88eeecbd733a64ff090}{projectScenePointOntoTerrain\_\-PosDirection} (Ogre::Vector3 \&p)}
+\label{class_stage_ad218c0bf0635f88eeecbd733a64ff090}
+
+\begin{DoxyCompactList}\small\item\em test if a position p hit terrain \end{DoxyCompactList}\item 
+\hypertarget{class_stage_af40313e83fe1171e258527818c927bf1}{
+bool \hyperlink{class_stage_af40313e83fe1171e258527818c927bf1}{projectScenePointOntoTerrain\_\-NegDirection} (Ogre::Vector3 \&p)}
+\label{class_stage_af40313e83fe1171e258527818c927bf1}
+
+\begin{DoxyCompactList}\small\item\em test if a position p escape from terrain to sky \end{DoxyCompactList}\item 
+\hypertarget{class_stage_af2eb2b229b008de471b08ab8203f9110}{
+virtual bool {\bfseries exist} (Ogre::Vector3 v, std::vector$<$ Ogre::Vector3 $>$ vecArr)}
+\label{class_stage_af2eb2b229b008de471b08ab8203f9110}
+
+\item 
+\hypertarget{class_stage_afc5232e4a8fec6f5d17299eadcc95d34}{
+virtual void \hyperlink{class_stage_afc5232e4a8fec6f5d17299eadcc95d34}{addTime} (double deltaTimeStep)}
+\label{class_stage_afc5232e4a8fec6f5d17299eadcc95d34}
+
+\begin{DoxyCompactList}\small\item\em increase stage mTime with delta time step \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_stage_a0cf284771219cabcbd360b9ab5856438}{
+int \hyperlink{class_stage_a0cf284771219cabcbd360b9ab5856438}{mScriptMode}}
+\label{class_stage_a0cf284771219cabcbd360b9ab5856438}
+
+\begin{DoxyCompactList}\small\item\em which script we want to execute \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a3b9cc8096f0c114a0334b79f3568944f}{
+int \hyperlink{class_stage_a3b9cc8096f0c114a0334b79f3568944f}{mViewMode}}
+\label{class_stage_a3b9cc8096f0c114a0334b79f3568944f}
+
+\begin{DoxyCompactList}\small\item\em which script we want to execute \end{DoxyCompactList}\item 
+\hypertarget{class_stage_aeb4b3563b0e4f19b887ed08dd0f250de}{
+int {\bfseries mWeaponMode}}
+\label{class_stage_aeb4b3563b0e4f19b887ed08dd0f250de}
+
+\item 
+\hypertarget{class_stage_a34d579c090825693a5073f05462c0b33}{
+\hyperlink{class_game_engine}{GameEngine} $\ast$ \hyperlink{class_stage_a34d579c090825693a5073f05462c0b33}{mEngine}}
+\label{class_stage_a34d579c090825693a5073f05462c0b33}
+
+\begin{DoxyCompactList}\small\item\em Entry for Game Engine, in order to access attribute of tutorial framework. \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a5105409275d800df0d533519383b9dcb}{
+Ogre::SceneManager $\ast$ \hyperlink{class_stage_a5105409275d800df0d533519383b9dcb}{mSceneMgr}}
+\label{class_stage_a5105409275d800df0d533519383b9dcb}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_stage}{Stage} Scene Manager. \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a0e9bb93fc9464908d8322f711ccda96c}{
+Ogre::FrameEvent \hyperlink{class_stage_a0e9bb93fc9464908d8322f711ccda96c}{evt}}
+\label{class_stage_a0e9bb93fc9464908d8322f711ccda96c}
+
+\begin{DoxyCompactList}\small\item\em keep the information of frame event \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a01faee9cfc70a60ff94d6e52d149ddf5}{
+Vector3 {\bfseries mGravity}}
+\label{class_stage_a01faee9cfc70a60ff94d6e52d149ddf5}
+
+\item 
+\hypertarget{class_stage_a0f7daa879405b56f29064f98f3f95796}{
+bool {\bfseries mGameOver}}
+\label{class_stage_a0f7daa879405b56f29064f98f3f95796}
+
+\item 
+\hypertarget{class_stage_a88944a22783b081dfd47c7385650983e}{
+bool {\bfseries mGameWin}}
+\label{class_stage_a88944a22783b081dfd47c7385650983e}
+
+\item 
+\hypertarget{class_stage_a0eef0e650549f3920e9a8be1449587b9}{
+double {\bfseries mTime}}
+\label{class_stage_a0eef0e650549f3920e9a8be1449587b9}
+
+\item 
+\hypertarget{class_stage_a0af397cff6d6c5042b9592cc25559e2c}{
+\hyperlink{class_player3_d}{Player3D} $\ast$ {\bfseries mPlayerSpr}}
+\label{class_stage_a0af397cff6d6c5042b9592cc25559e2c}
+
+\item 
+\hypertarget{class_stage_ae4da4d0572a6cebd10075164ff3e5e7c}{
+\hyperlink{class_sprite3_d}{Sprite3D} $\ast$ {\bfseries mTowerSpr}}
+\label{class_stage_ae4da4d0572a6cebd10075164ff3e5e7c}
+
+\item 
+\hypertarget{class_stage_a53f674f11fdc0ed3762b1c77bfd8ca19}{
+\hyperlink{class_b_a_r__2_d}{BAR\_\-2D} $\ast$ {\bfseries mPlayerHPBar2D}}
+\label{class_stage_a53f674f11fdc0ed3762b1c77bfd8ca19}
+
+\item 
+\hypertarget{class_stage_a65259144f3e9ebf6caeac8c3e9b6270c}{
+\hyperlink{class_b_a_r__2_d}{BAR\_\-2D} $\ast$ {\bfseries mTowerHPBar2D}}
+\label{class_stage_a65259144f3e9ebf6caeac8c3e9b6270c}
+
+\item 
+\hypertarget{class_stage_ac4a5cc56ba8544f051eeaf439ebc412d}{
+\hyperlink{class_particle_manager}{ParticleManager} $\ast$ {\bfseries mParticleMgr}}
+\label{class_stage_ac4a5cc56ba8544f051eeaf439ebc412d}
+
+\item 
+\hypertarget{class_stage_ab55f9bfef2624c989b690e6e21dc5a8a}{
+Vector3 {\bfseries mViewOffset}}
+\label{class_stage_ab55f9bfef2624c989b690e6e21dc5a8a}
+
+\item 
+\hypertarget{class_stage_a7f2eccc6a64f05bb275b16d310236ec4}{
+\hyperlink{class_weapon_manager}{WeaponManager} $\ast$ {\bfseries mPlayerWeaponMgr}}
+\label{class_stage_a7f2eccc6a64f05bb275b16d310236ec4}
+
+\item 
+\hypertarget{class_stage_a66300c230de1c444943ae23f9c771daa}{
+\hyperlink{class_weapon_manager}{WeaponManager} $\ast$ {\bfseries mMonsterWeaponMgr}}
+\label{class_stage_a66300c230de1c444943ae23f9c771daa}
+
+\item 
+\hypertarget{class_stage_a039c28a7af85930be6202a9db4681b34}{
+\hyperlink{class_sprite_manager}{SpriteManager} $\ast$ {\bfseries mMonsterMgr}}
+\label{class_stage_a039c28a7af85930be6202a9db4681b34}
+
+\item 
+\hypertarget{class_stage_a87a92448aeb661998c72f45f417b4533}{
+\hyperlink{class_a_i_engine}{AIEngine} $\ast$ {\bfseries mAIEng}}
+\label{class_stage_a87a92448aeb661998c72f45f417b4533}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_stage_adf93a6c6ebd1112f7c9015ecfc57d477}{
+virtual void \hyperlink{class_stage_adf93a6c6ebd1112f7c9015ecfc57d477}{doLoadingScript} ()}
+\label{class_stage_adf93a6c6ebd1112f7c9015ecfc57d477}
+
+\begin{DoxyCompactList}\small\item\em do loading script ex:create scene, camera... \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a13cf888f39707de49008fcd1247c8fd0}{
+virtual void \hyperlink{class_stage_a13cf888f39707de49008fcd1247c8fd0}{doBattleScript} ()}
+\label{class_stage_a13cf888f39707de49008fcd1247c8fd0}
+
+\begin{DoxyCompactList}\small\item\em do battle script ex:execute any game rule or AI \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a60fa4da30e90e91240412ec68c4b9c79}{
+virtual void \hyperlink{class_stage_a60fa4da30e90e91240412ec68c4b9c79}{doStoryScript} ()}
+\label{class_stage_a60fa4da30e90e91240412ec68c4b9c79}
+
+\begin{DoxyCompactList}\small\item\em do story script ex:full script control, don't enable any game rule or AI \end{DoxyCompactList}\item 
+\hypertarget{class_stage_aa8f2bcb1f554d69681c1efa7117e415b}{
+virtual void \hyperlink{class_stage_aa8f2bcb1f554d69681c1efa7117e415b}{doFinishScript} ()}
+\label{class_stage_aa8f2bcb1f554d69681c1efa7117e415b}
+
+\begin{DoxyCompactList}\small\item\em do finish script ex:release resource and assign script for next stage \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a5040d8721ff3cfdd5ef0668042affd4a}{
+virtual void \hyperlink{class_stage_a5040d8721ff3cfdd5ef0668042affd4a}{doGameOverScript} ()}
+\label{class_stage_a5040d8721ff3cfdd5ef0668042affd4a}
+
+\begin{DoxyCompactList}\small\item\em do game over script \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a675240bc8b7c027e91194d34d0c89ec7}{
+virtual void \hyperlink{class_stage_a675240bc8b7c027e91194d34d0c89ec7}{doGameWinScript} ()}
+\label{class_stage_a675240bc8b7c027e91194d34d0c89ec7}
+
+\begin{DoxyCompactList}\small\item\em do game win script \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a715ac3600bd8b3e74e5efc054c2bec34}{
+virtual void \hyperlink{class_stage_a715ac3600bd8b3e74e5efc054c2bec34}{chooseScene} ()}
+\label{class_stage_a715ac3600bd8b3e74e5efc054c2bec34}
+
+\begin{DoxyCompactList}\small\item\em create scene manager \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a4043e74b36e97278b9ff2e6e96464d6b}{
+virtual void \hyperlink{class_stage_a4043e74b36e97278b9ff2e6e96464d6b}{createCamera} ()}
+\label{class_stage_a4043e74b36e97278b9ff2e6e96464d6b}
+
+\begin{DoxyCompactList}\small\item\em create camera \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a867492b470f630770fe9255cd40c55c3}{
+virtual void \hyperlink{class_stage_a867492b470f630770fe9255cd40c55c3}{createViewPort} ()}
+\label{class_stage_a867492b470f630770fe9255cd40c55c3}
+
+\begin{DoxyCompactList}\small\item\em create view port \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a8d474bd5fba3af0b5632eb16e11cbb16}{
+virtual void \hyperlink{class_stage_a8d474bd5fba3af0b5632eb16e11cbb16}{createScene} ()}
+\label{class_stage_a8d474bd5fba3af0b5632eb16e11cbb16}
+
+\begin{DoxyCompactList}\small\item\em create object that will appear in scene ex: attach scene node to entity \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a7a425084e32c5c410803f96109f63608}{
+virtual void \hyperlink{class_stage_a7a425084e32c5c410803f96109f63608}{loadResource} ()}
+\label{class_stage_a7a425084e32c5c410803f96109f63608}
+
+\begin{DoxyCompactList}\small\item\em load resource \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a84fbf132029385418fcb04cf27bd2f9e}{
+virtual void \hyperlink{class_stage_a84fbf132029385418fcb04cf27bd2f9e}{loadParticle} ()}
+\label{class_stage_a84fbf132029385418fcb04cf27bd2f9e}
+
+\begin{DoxyCompactList}\small\item\em load particle effect \end{DoxyCompactList}\item 
+\hypertarget{class_stage_aade99498a99964b917afa8dbf06fafe3}{
+virtual void \hyperlink{class_stage_aade99498a99964b917afa8dbf06fafe3}{loadMonster} ()}
+\label{class_stage_aade99498a99964b917afa8dbf06fafe3}
+
+\begin{DoxyCompactList}\small\item\em load monsters \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a9e8518378e4420a4ec1f7a9f708ac60f}{
+virtual void \hyperlink{class_stage_a9e8518378e4420a4ec1f7a9f708ac60f}{loadPlayer} ()}
+\label{class_stage_a9e8518378e4420a4ec1f7a9f708ac60f}
+
+\begin{DoxyCompactList}\small\item\em load player \end{DoxyCompactList}\item 
+\hypertarget{class_stage_a688efe5c398142fa0f1567d94f207440}{
+virtual void \hyperlink{class_stage_a688efe5c398142fa0f1567d94f207440}{loadOverlay} ()}
+\label{class_stage_a688efe5c398142fa0f1567d94f207440}
+
+\begin{DoxyCompactList}\small\item\em load overlay \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_stage_a322de2cf25789a66bc3b628b7d628013}{
+OverlayElement $\ast$ {\bfseries mWeaponPicture}}
+\label{class_stage_a322de2cf25789a66bc3b628b7d628013}
+
+\item 
+\hypertarget{class_stage_a365d859f37813bd9285f32e1c0f8c607}{
+Overlay $\ast$ {\bfseries mWeaponOverlay}}
+\label{class_stage_a365d859f37813bd9285f32e1c0f8c607}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+3D Game Programming\par
+ My Name: �i���� Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com} 
+
+This class handle for different stage resource manage and gameplay script issue 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage.h\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage\_\-CollisionDetection.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage\_\-doBattleScript.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage\_\-doFinishScript.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage\_\-doGameOverScript.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage\_\-doGameWinScript.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage\_\-doLoadingScript.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage\_\-doStoryScript.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage\_\-GameRule.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage\_\-Input.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage\_\-loadResource.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage\_\-util.cpp\end{DoxyCompactItemize}

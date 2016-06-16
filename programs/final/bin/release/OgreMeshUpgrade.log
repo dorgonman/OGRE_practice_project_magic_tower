@@ -1,0 +1,25 @@
+00:59:24: Creating resource group General
+00:59:24: Creating resource group Internal
+00:59:24: Creating resource group Autodetect
+00:59:24: Registering ResourceManager for type Material
+00:59:24: Registering ResourceManager for type Skeleton
+00:59:24: Registering ResourceManager for type Mesh
+00:59:24: WARNING: conversion is an older format ([MeshSerializer_v1.40]); you should upgrade it as soon as possible using the OgreMeshUpgrade tool.
+00:59:24: MeshSerializer writing mesh data to C:\workspace\Dropbox\workspace\OGRE\final_project\9857515_±i´º·Ó\programs\final\bin\release\athene.mesh...
+00:59:24: File header written.
+00:59:24: Writing mesh data...
+00:59:24: Writing submesh...
+00:59:24: Exporting submesh texture aliases...
+00:59:24: Submesh texture aliases exported.
+00:59:24: Submesh exported.
+00:59:24: Exporting bounds information....
+00:59:24: Bounds information exported.
+00:59:24: Exporting submesh name table...
+00:59:24: Submesh name table exported.
+00:59:24: Exporting edge lists...
+00:59:24: Edge lists exported
+00:59:24: Mesh data exported.
+00:59:24: MeshSerializer export successful.
+00:59:24: Unregistering ResourceManager for type Mesh
+00:59:24: Unregistering ResourceManager for type Skeleton
+00:59:24: Unregistering ResourceManager for type Material

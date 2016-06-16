@@ -1,0 +1,79 @@
+
+material darkInput
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+                  scene_blend alpha_blend
+			texture_unit
+			{
+				texture textField.png
+			}
+		}
+	}
+}
+
+material darkInput.mouseOver
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+                  scene_blend alpha_blend
+			texture_unit
+			{
+   				anim_texture textFieldAnim1.png textFieldAnim2.png textFieldAnim3.png .2
+			}
+		}
+	}
+}
+
+material darkInput.onClick
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+                  scene_blend alpha_blend
+			texture_unit
+			{
+				texture textFieldSolid.png
+			}
+		}
+	}
+}
+
+material darkInput.focused
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+                  scene_blend alpha_blend
+			texture_unit
+			{
+				texture textFieldSolid.png
+			}
+		}
+	}
+}
+ material darkInput.focused.mouseOver
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+                  scene_blend alpha_blend
+			texture_unit
+			{
+				texture textFieldHighlight.png
+			}
+		}
+	}
+}

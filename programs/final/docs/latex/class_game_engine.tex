@@ -1,0 +1,121 @@
+\hypertarget{class_game_engine}{
+\section{GameEngine Class Reference}
+\label{class_game_engine}\index{GameEngine@{GameEngine}}
+}
+
+
+3D Game Programming\par
+ My Name: ±i´º·Ó Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com}  
+
+
+
+
+{\ttfamily \#include $<$GameEngine.h$>$}
+
+Inheritance diagram for GameEngine:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_engine}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_engine_a9bfe77f3b1be23df1dc7c83d91e95e39}{
+void \hyperlink{class_game_engine_a9bfe77f3b1be23df1dc7c83d91e95e39}{enableDefaultInput} (bool b)}
+\label{class_game_engine_a9bfe77f3b1be23df1dc7c83d91e95e39}
+
+\begin{DoxyCompactList}\small\item\em set if we want to use default camera man input \end{DoxyCompactList}\item 
+\hypertarget{class_game_engine_a84c1006cc730ca6d2f2cdf9c22821d91}{
+virtual bool \hyperlink{class_game_engine_a84c1006cc730ca6d2f2cdf9c22821d91}{keyPressed} (const OIS::KeyEvent \&arg)}
+\label{class_game_engine_a84c1006cc730ca6d2f2cdf9c22821d91}
+
+\begin{DoxyCompactList}\small\item\em key pressed event, dispatch to \hyperlink{class_stage}{Stage} \end{DoxyCompactList}\item 
+\hypertarget{class_game_engine_a11bbed726239fa463c9046a4eafb60cc}{
+virtual bool \hyperlink{class_game_engine_a11bbed726239fa463c9046a4eafb60cc}{keyReleased} (const OIS::KeyEvent \&arg)}
+\label{class_game_engine_a11bbed726239fa463c9046a4eafb60cc}
+
+\begin{DoxyCompactList}\small\item\em key released event, dispatch to \hyperlink{class_stage}{Stage} \end{DoxyCompactList}\item 
+\hypertarget{class_game_engine_a6e9066a10e956ee7c0b64c2b9636cedf}{
+virtual bool \hyperlink{class_game_engine_a6e9066a10e956ee7c0b64c2b9636cedf}{mouseMoved} (const OIS::MouseEvent \&arg)}
+\label{class_game_engine_a6e9066a10e956ee7c0b64c2b9636cedf}
+
+\begin{DoxyCompactList}\small\item\em mouse moved event, dispatch to \hyperlink{class_stage}{Stage} \end{DoxyCompactList}\item 
+\hypertarget{class_game_engine_a8aaec8359fd7a7ad48cc5999e11b8207}{
+virtual bool \hyperlink{class_game_engine_a8aaec8359fd7a7ad48cc5999e11b8207}{mousePressed} (const OIS::MouseEvent \&arg, OIS::MouseButtonID id)}
+\label{class_game_engine_a8aaec8359fd7a7ad48cc5999e11b8207}
+
+\begin{DoxyCompactList}\small\item\em mouse pressed event, dispatch to \hyperlink{class_stage}{Stage} \end{DoxyCompactList}\item 
+\hypertarget{class_game_engine_a04ee3e07d5851097c4da07fc1789ce33}{
+virtual bool \hyperlink{class_game_engine_a04ee3e07d5851097c4da07fc1789ce33}{mouseReleased} (const OIS::MouseEvent \&arg, OIS::MouseButtonID id)}
+\label{class_game_engine_a04ee3e07d5851097c4da07fc1789ce33}
+
+\begin{DoxyCompactList}\small\item\em mouse released event, dispatch to \hyperlink{class_stage}{Stage} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_engine_a6e93124855b746f36e57bb39d5bb97fd}{
+float {\bfseries mTotalScore}}
+\label{class_game_engine_a6e93124855b746f36e57bb39d5bb97fd}
+
+\item 
+\hypertarget{class_game_engine_a422e29bf038fb6395ad644eb18c7400c}{
+\hyperlink{class_stage}{Stage} $\ast$ \hyperlink{class_game_engine_a422e29bf038fb6395ad644eb18c7400c}{currentStage}}
+\label{class_game_engine_a422e29bf038fb6395ad644eb18c7400c}
+
+\begin{DoxyCompactList}\small\item\em current \hyperlink{class_stage}{Stage} entry for execute stage script \end{DoxyCompactList}\item 
+\hypertarget{class_game_engine_adb37d2fbcc2167909f1effbcb2bc7409}{
+std::vector$<$ \hyperlink{class_stage}{Stage} $\ast$ $>$ \hyperlink{class_game_engine_adb37d2fbcc2167909f1effbcb2bc7409}{mStages}}
+\label{class_game_engine_adb37d2fbcc2167909f1effbcb2bc7409}
+
+\begin{DoxyCompactList}\small\item\em keep all stage entry \end{DoxyCompactList}\item 
+\hypertarget{class_game_engine_a4871463fe007c4325bd942e24920886e}{
+bool {\bfseries mDefaultInputEnable}}
+\label{class_game_engine_a4871463fe007c4325bd942e24920886e}
+
+\item 
+\hypertarget{class_game_engine_ab001eacd635db2f0adc81db662bac28a}{
+std::map$<$ String, \hyperlink{class_f_a_d_e_r}{FADER} $\ast$ $>$ {\bfseries mFaderMap}}
+\label{class_game_engine_ab001eacd635db2f0adc81db662bac28a}
+
+\item 
+\hypertarget{class_game_engine_a22bb3b51178ec886572a32f7454085e8}{
+std::map$<$ String, Overlay $\ast$ $>$ {\bfseries mOverlayMap}}
+\label{class_game_engine_a22bb3b51178ec886572a32f7454085e8}
+
+\item 
+\hypertarget{class_game_engine_a535b654fe16e023811389cbfab36145f}{
+\hyperlink{class_audio_manager}{AudioManager} $\ast$ {\bfseries mAudioMgr}}
+\label{class_game_engine_a535b654fe16e023811389cbfab36145f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_engine_ad13cbdf751cfad0651f2d8a9d8ec703c}{
+virtual void \hyperlink{class_game_engine_ad13cbdf751cfad0651f2d8a9d8ec703c}{createScene} (void)}
+\label{class_game_engine_ad13cbdf751cfad0651f2d8a9d8ec703c}
+
+\begin{DoxyCompactList}\small\item\em create default scene \end{DoxyCompactList}\item 
+\hypertarget{class_game_engine_a33c33a034bf0e53a4c976e0aed9a2506}{
+virtual bool \hyperlink{class_game_engine_a33c33a034bf0e53a4c976e0aed9a2506}{frameStarted} (const Ogre::FrameEvent \&evt)}
+\label{class_game_engine_a33c33a034bf0e53a4c976e0aed9a2506}
+
+\begin{DoxyCompactList}\small\item\em only execute current stage script \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+3D Game Programming\par
+ My Name: ±i´º·Ó Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com} 
+
+This class extend tutorial framework and handle the entry of our stage script entry 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/é­”å¡”å®ˆè­·è€…/programs/final/source/GameEngine.h\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/é­”å¡”å®ˆè­·è€…/programs/final/source/GameEngine\_\-util.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/é­”å¡”å®ˆè­·è€…/programs/final/source/main.cpp\end{DoxyCompactItemize}

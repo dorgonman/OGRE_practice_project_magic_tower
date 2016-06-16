@@ -1,0 +1,107 @@
+\hypertarget{class_stage1}{
+\section{Stage1 Class Reference}
+\label{class_stage1}\index{Stage1@{Stage1}}
+}
+
+
+3D Game Programming\par
+ My Name: Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com}  
+
+
+
+
+{\ttfamily \#include $<$Stage.h$>$}
+
+Inheritance diagram for Stage1:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_stage1}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_stage1_a17a974df183d322a87adf66db1d36170}{
+\hyperlink{class_stage1_a17a974df183d322a87adf66db1d36170}{Stage1} (\hyperlink{class_game_engine}{GameEngine} $\ast$engine)}
+\label{class_stage1_a17a974df183d322a87adf66db1d36170}
+
+\begin{DoxyCompactList}\small\item\em constructor of stage \end{DoxyCompactList}\item 
+\hypertarget{class_stage1_a0bd922af78678696112fe8d4091cfa4f}{
+\hyperlink{class_stage1_a0bd922af78678696112fe8d4091cfa4f}{$\sim$Stage1} ()}
+\label{class_stage1_a0bd922af78678696112fe8d4091cfa4f}
+
+\begin{DoxyCompactList}\small\item\em deconstructor of stage \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_stage1_ac81dafdcf404c02865e36de907257894}{
+virtual void \hyperlink{class_stage1_ac81dafdcf404c02865e36de907257894}{doLoadingScript} ()}
+\label{class_stage1_ac81dafdcf404c02865e36de907257894}
+
+\begin{DoxyCompactList}\small\item\em do loading script ex:create scene, camera... \end{DoxyCompactList}\item 
+\hypertarget{class_stage1_aeea453192a7e1dc61f9386a2c16503ca}{
+virtual void \hyperlink{class_stage1_aeea453192a7e1dc61f9386a2c16503ca}{doBattleScript} ()}
+\label{class_stage1_aeea453192a7e1dc61f9386a2c16503ca}
+
+\begin{DoxyCompactList}\small\item\em do battle script ex:execute any game rule or AI \end{DoxyCompactList}\item 
+\hypertarget{class_stage1_abc82ddb6ea0eb672f798d7f7a4db54d8}{
+virtual void \hyperlink{class_stage1_abc82ddb6ea0eb672f798d7f7a4db54d8}{doStoryScript} ()}
+\label{class_stage1_abc82ddb6ea0eb672f798d7f7a4db54d8}
+
+\begin{DoxyCompactList}\small\item\em do story script ex:full script control, don't enable any game rule or AI \end{DoxyCompactList}\item 
+\hypertarget{class_stage1_aab192aa92564c960ac56839c7dac4dbd}{
+virtual void \hyperlink{class_stage1_aab192aa92564c960ac56839c7dac4dbd}{doFinishScript} ()}
+\label{class_stage1_aab192aa92564c960ac56839c7dac4dbd}
+
+\begin{DoxyCompactList}\small\item\em do finish script ex:release resource and assign script for next stage \end{DoxyCompactList}\item 
+\hypertarget{class_stage1_a551f5dea5cc08e51fb92607e17296c19}{
+virtual void \hyperlink{class_stage1_a551f5dea5cc08e51fb92607e17296c19}{doGameWinScript} ()}
+\label{class_stage1_a551f5dea5cc08e51fb92607e17296c19}
+
+\begin{DoxyCompactList}\small\item\em do game win script \end{DoxyCompactList}\item 
+\hypertarget{class_stage1_aeee21dc6fad9198dd6f4ee538b4ffa82}{
+virtual void \hyperlink{class_stage1_aeee21dc6fad9198dd6f4ee538b4ffa82}{chooseScene} ()}
+\label{class_stage1_aeee21dc6fad9198dd6f4ee538b4ffa82}
+
+\begin{DoxyCompactList}\small\item\em create scene manager \end{DoxyCompactList}\item 
+\hypertarget{class_stage1_a7491d8806225ef133ee605116698f0ac}{
+virtual void \hyperlink{class_stage1_a7491d8806225ef133ee605116698f0ac}{createCamera} ()}
+\label{class_stage1_a7491d8806225ef133ee605116698f0ac}
+
+\begin{DoxyCompactList}\small\item\em create camera \end{DoxyCompactList}\item 
+\hypertarget{class_stage1_a5b0812d48f107953b5711c309dd53a05}{
+virtual void \hyperlink{class_stage1_a5b0812d48f107953b5711c309dd53a05}{createViewPort} ()}
+\label{class_stage1_a5b0812d48f107953b5711c309dd53a05}
+
+\begin{DoxyCompactList}\small\item\em create view port \end{DoxyCompactList}\item 
+\hypertarget{class_stage1_ab471d3f084b72248d02fb60e5e2836fd}{
+virtual void \hyperlink{class_stage1_ab471d3f084b72248d02fb60e5e2836fd}{createScene} ()}
+\label{class_stage1_ab471d3f084b72248d02fb60e5e2836fd}
+
+\begin{DoxyCompactList}\small\item\em create object that will appear in scene ex: attach scene node to entity \end{DoxyCompactList}\item 
+\hypertarget{class_stage1_af4f9d9df5df254ac6f1bc99cfda85511}{
+virtual bool \hyperlink{class_stage1_af4f9d9df5df254ac6f1bc99cfda85511}{keyPressed} (const OIS::KeyEvent \&arg)}
+\label{class_stage1_af4f9d9df5df254ac6f1bc99cfda85511}
+
+\begin{DoxyCompactList}\small\item\em hand on key pressed event \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+3D Game Programming\par
+ My Name: Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com} 
+
+This class is extend from stage that override some function for create a specific stage 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage.h\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage1.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage1\_\-camera.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage1\_\-event.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage1\_\-input.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage1\_\-scene.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Stage1\_\-viewport.cpp\end{DoxyCompactItemize}

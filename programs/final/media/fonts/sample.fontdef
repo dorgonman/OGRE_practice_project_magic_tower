@@ -1,0 +1,37 @@
+StarWars
+{
+	// Now this one I agree with ;)
+	// A Star Wars font :)
+	type 		truetype
+	source 		solo5.ttf
+	size 		16
+	resolution 	96
+}
+
+
+BlueHighway
+{
+
+	type 		truetype
+	source 		bluebold.ttf
+	size 		16
+	resolution 	96
+}
+
+SimHei
+{
+  type truetype
+  source simhei.ttf
+  size 18
+  resolution 96
+  code_points 19968-40869 33-126 //中文區  英文區
+} 
+
+chinese
+{
+  type truetype
+  source kaiu.ttf
+  size 18
+  resolution 96
+  code_points 19968-40869 33-126 //中文區  英文區
+} 

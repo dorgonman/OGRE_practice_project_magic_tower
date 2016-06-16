@@ -1,0 +1,66 @@
+\hypertarget{class_particle_manager}{
+\section{ParticleManager Class Reference}
+\label{class_particle_manager}\index{ParticleManager@{ParticleManager}}
+}
+
+
+3D Game Programming\par
+ My Name: ±i´º·Ó Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com}  
+
+
+
+
+{\ttfamily \#include $<$ParticleManager.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_particle_manager_a880bbb224ae757262d85701cb9242dd6}{
+virtual void \hyperlink{class_particle_manager_a880bbb224ae757262d85701cb9242dd6}{addParticleEffect} (string name, \hyperlink{class_particle_effect}{ParticleEffect} $\ast$effect)}
+\label{class_particle_manager_a880bbb224ae757262d85701cb9242dd6}
+
+\begin{DoxyCompactList}\small\item\em add one particle effect \end{DoxyCompactList}\item 
+\hypertarget{class_particle_manager_ace395ff0ba79430ab451664840d2126d}{
+virtual void \hyperlink{class_particle_manager_ace395ff0ba79430ab451664840d2126d}{update} (Ogre::FrameEvent \&evt)}
+\label{class_particle_manager_ace395ff0ba79430ab451664840d2126d}
+
+\begin{DoxyCompactList}\small\item\em update all particle effect \end{DoxyCompactList}\item 
+\hypertarget{class_particle_manager_a5272c211fcbe87f196732d404fe0ad81}{
+virtual void \hyperlink{class_particle_manager_a5272c211fcbe87f196732d404fe0ad81}{trigger} (Ogre::Vector3 at)}
+\label{class_particle_manager_a5272c211fcbe87f196732d404fe0ad81}
+
+\begin{DoxyCompactList}\small\item\em fire a particle effect in particle manager that it's alive is false \end{DoxyCompactList}\item 
+\hypertarget{class_particle_manager_a138f2491c90b7cedacf0189d43cb0294}{
+virtual void \hyperlink{class_particle_manager_a138f2491c90b7cedacf0189d43cb0294}{trigger} (string name, Ogre::Vector3 at)}
+\label{class_particle_manager_a138f2491c90b7cedacf0189d43cb0294}
+
+\begin{DoxyCompactList}\small\item\em fire a particle effect at the index in particle manager \end{DoxyCompactList}\item 
+\hypertarget{class_particle_manager_a21c0d5f0b995c023c7ddb7a25e6a0274}{
+virtual bool \hyperlink{class_particle_manager_a21c0d5f0b995c023c7ddb7a25e6a0274}{isAlive} (string name)}
+\label{class_particle_manager_a21c0d5f0b995c023c7ddb7a25e6a0274}
+
+\begin{DoxyCompactList}\small\item\em check if the particle (index) is already alive \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_particle_manager_abcf57e93172f8be3203776dab8b0c9d5}{
+std::map$<$ string, \hyperlink{class_particle_effect}{ParticleEffect} $\ast$ $>$ {\bfseries mParticleMap}}
+\label{class_particle_manager_abcf57e93172f8be3203776dab8b0c9d5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+3D Game Programming\par
+ My Name: ±i´º·Ó Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com} 
+
+This class handle for multiple particle management 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/é­”å¡”å®ˆè­·è€…/programs/final/source/ParticleManager.h\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/é­”å¡”å®ˆè­·è€…/programs/final/source/ParticleManager.cpp\end{DoxyCompactItemize}

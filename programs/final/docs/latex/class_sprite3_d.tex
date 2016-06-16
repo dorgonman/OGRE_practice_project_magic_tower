@@ -1,0 +1,409 @@
+\hypertarget{class_sprite3_d}{
+\section{Sprite3D Class Reference}
+\label{class_sprite3_d}\index{Sprite3D@{Sprite3D}}
+}
+
+
+3D Game Programming\par
+ My Name: �i���� Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com}  
+
+
+
+
+{\ttfamily \#include $<$Sprite3D.h$>$}
+
+Inheritance diagram for Sprite3D:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.000000cm]{class_sprite3_d}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries eActionMode} \{ {\bfseries AM\_\-JUMP}, 
+{\bfseries AM\_\-RUN}, 
+{\bfseries AM\_\-NO}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_sprite3_d_a482adefa91baa6538046a021a910a7e2}{
+\hyperlink{class_sprite3_d_a482adefa91baa6538046a021a910a7e2}{Sprite3D} (\hyperlink{class_stage}{Stage} $\ast$stage)}
+\label{class_sprite3_d_a482adefa91baa6538046a021a910a7e2}
+
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a2272a55a5ec582997b6a928f4a06acac}{
+\hyperlink{class_sprite3_d_a2272a55a5ec582997b6a928f4a06acac}{$\sim$Sprite3D} ()}
+\label{class_sprite3_d_a2272a55a5ec582997b6a928f4a06acac}
+
+\begin{DoxyCompactList}\small\item\em deconstructor \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_afb636eab3fb397414441cb2acfb2005b}{
+virtual void \hyperlink{class_sprite3_d_afb636eab3fb397414441cb2acfb2005b}{attachSceneNode} (SceneNode $\ast$snode)}
+\label{class_sprite3_d_afb636eab3fb397414441cb2acfb2005b}
+
+\begin{DoxyCompactList}\small\item\em attach a scene node to \hyperlink{class_sprite3_d}{Sprite3D} \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a76a85210dcba92a7d44a87613daa4c91}{
+virtual void \hyperlink{class_sprite3_d_a76a85210dcba92a7d44a87613daa4c91}{walk} (Ogre::Vector3 direction)}
+\label{class_sprite3_d_a76a85210dcba92a7d44a87613daa4c91}
+
+\begin{DoxyCompactList}\small\item\em walk to a direction \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a5b8a9837e7c0c012be763d064eac9e8e}{
+virtual void \hyperlink{class_sprite3_d_a5b8a9837e7c0c012be763d064eac9e8e}{walkForward} (const Ogre::FrameEvent \&evt)}
+\label{class_sprite3_d_a5b8a9837e7c0c012be763d064eac9e8e}
+
+\begin{DoxyCompactList}\small\item\em walk forward \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_aa0d0dfcf2d9a7c90ec843947947961e9}{
+virtual void \hyperlink{class_sprite3_d_aa0d0dfcf2d9a7c90ec843947947961e9}{walkBackward} (const Ogre::FrameEvent \&evt)}
+\label{class_sprite3_d_aa0d0dfcf2d9a7c90ec843947947961e9}
+
+\begin{DoxyCompactList}\small\item\em walk backward \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_af8fff0d618034fc661020ae3437c2297}{
+virtual void \hyperlink{class_sprite3_d_af8fff0d618034fc661020ae3437c2297}{walkLeft} (const Ogre::FrameEvent \&evt)}
+\label{class_sprite3_d_af8fff0d618034fc661020ae3437c2297}
+
+\begin{DoxyCompactList}\small\item\em walk left \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_ac3fa3d3ec6b58599354be5fb562613b2}{
+virtual void \hyperlink{class_sprite3_d_ac3fa3d3ec6b58599354be5fb562613b2}{walkRight} (const Ogre::FrameEvent \&evt)}
+\label{class_sprite3_d_ac3fa3d3ec6b58599354be5fb562613b2}
+
+\begin{DoxyCompactList}\small\item\em walk Right \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a44e398575f2546c662eb7ee4efa02174}{
+virtual void \hyperlink{class_sprite3_d_a44e398575f2546c662eb7ee4efa02174}{update} (const Ogre::FrameEvent \&evt)}
+\label{class_sprite3_d_a44e398575f2546c662eb7ee4efa02174}
+
+\begin{DoxyCompactList}\small\item\em update sprite \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_aadf19d0e445555a87a26d77df01c3852}{
+virtual void \hyperlink{class_sprite3_d_aadf19d0e445555a87a26d77df01c3852}{updateViewDirection} (Camera $\ast$camera, Vector3 direction, Vector3 offset, Ogre::Radian yawRadian)}
+\label{class_sprite3_d_aadf19d0e445555a87a26d77df01c3852}
+
+\begin{DoxyCompactList}\small\item\em update view direction with a offset, for FPS or TPS \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a66088260841ca96d06aa23e70a40e067}{
+virtual void \hyperlink{class_sprite3_d_a66088260841ca96d06aa23e70a40e067}{updateViewDirection} (Vector3 targetPosition, Ogre::Radian yawRadian)}
+\label{class_sprite3_d_a66088260841ca96d06aa23e70a40e067}
+
+\begin{DoxyCompactList}\small\item\em update view direction with a offset, for Second Person view \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a36d0f69a1633eba249d7d619c02a2cdf}{
+virtual void \hyperlink{class_sprite3_d_a36d0f69a1633eba249d7d619c02a2cdf}{updateViewDirection} (Ogre::Radian yawRadian)}
+\label{class_sprite3_d_a36d0f69a1633eba249d7d619c02a2cdf}
+
+\begin{DoxyCompactList}\small\item\em update view direction \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a7bd5084247a76dc7c45d28969debb0de}{
+virtual void \hyperlink{class_sprite3_d_a7bd5084247a76dc7c45d28969debb0de}{setInitPosition} (Ogre::Vector3 pos)}
+\label{class_sprite3_d_a7bd5084247a76dc7c45d28969debb0de}
+
+\begin{DoxyCompactList}\small\item\em set initial position \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a3f754147fec637545b0bb076b6eb5415}{
+virtual void \hyperlink{class_sprite3_d_a3f754147fec637545b0bb076b6eb5415}{setPosition} (Vector3 pos)}
+\label{class_sprite3_d_a3f754147fec637545b0bb076b6eb5415}
+
+\begin{DoxyCompactList}\small\item\em set position \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_aa6d354f2ecc8859249b3f9409c6ddd96}{
+virtual void \hyperlink{class_sprite3_d_aa6d354f2ecc8859249b3f9409c6ddd96}{setLifeTime} (float time)}
+\label{class_sprite3_d_aa6d354f2ecc8859249b3f9409c6ddd96}
+
+\begin{DoxyCompactList}\small\item\em set life time of sprite3D \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a973c397c016372c6cdf4f84d90649af8}{
+virtual void \hyperlink{class_sprite3_d_a973c397c016372c6cdf4f84d90649af8}{setTime} (float time)}
+\label{class_sprite3_d_a973c397c016372c6cdf4f84d90649af8}
+
+\begin{DoxyCompactList}\small\item\em set current time of sprite3D \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a687a1131784525f95f156a340ba712e0}{
+virtual void \hyperlink{class_sprite3_d_a687a1131784525f95f156a340ba712e0}{setInitVelocity} (Ogre::Vector3 vel)}
+\label{class_sprite3_d_a687a1131784525f95f156a340ba712e0}
+
+\begin{DoxyCompactList}\small\item\em set velocity \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a91acf312e634bd8d09b943d38e3edbd1}{
+virtual void \hyperlink{class_sprite3_d_a91acf312e634bd8d09b943d38e3edbd1}{setVelocity} (Ogre::Vector3 vel)}
+\label{class_sprite3_d_a91acf312e634bd8d09b943d38e3edbd1}
+
+\begin{DoxyCompactList}\small\item\em set velocity \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_ac40c41b1b7100bab37047ac078658ad9}{
+virtual void \hyperlink{class_sprite3_d_ac40c41b1b7100bab37047ac078658ad9}{setInitDirection} (Ogre::Vector3 direction)}
+\label{class_sprite3_d_ac40c41b1b7100bab37047ac078658ad9}
+
+\begin{DoxyCompactList}\small\item\em set initial direction and current Direction \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a333d13ac64ae81f7703bade17abc8f75}{
+virtual void \hyperlink{class_sprite3_d_a333d13ac64ae81f7703bade17abc8f75}{setDirection} (Ogre::Vector3 direction)}
+\label{class_sprite3_d_a333d13ac64ae81f7703bade17abc8f75}
+
+\begin{DoxyCompactList}\small\item\em set direction \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_ab8fc0001e16dca036c6cec3696e15220}{
+virtual void \hyperlink{class_sprite3_d_ab8fc0001e16dca036c6cec3696e15220}{setVision} (float vision)}
+\label{class_sprite3_d_ab8fc0001e16dca036c6cec3696e15220}
+
+\begin{DoxyCompactList}\small\item\em set sprite vision region \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_ad9137c6d70552dbdcee1862b8c6e52cd}{
+virtual void \hyperlink{class_sprite3_d_ad9137c6d70552dbdcee1862b8c6e52cd}{setVisibilityFlags} (uint flags)}
+\label{class_sprite3_d_ad9137c6d70552dbdcee1862b8c6e52cd}
+
+\begin{DoxyCompactList}\small\item\em set visibility mask \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a03d9bad757fd09b34b71984e10eaf937}{
+virtual void \hyperlink{class_sprite3_d_a03d9bad757fd09b34b71984e10eaf937}{setScale} (Vector3 scale)}
+\label{class_sprite3_d_a03d9bad757fd09b34b71984e10eaf937}
+
+\begin{DoxyCompactList}\small\item\em set scale of sprite \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_aaa1dc0a03c88ca345a2b8d95958dc130}{
+virtual Vector3 \hyperlink{class_sprite3_d_aaa1dc0a03c88ca345a2b8d95958dc130}{getInitVelocity} ()}
+\label{class_sprite3_d_aaa1dc0a03c88ca345a2b8d95958dc130}
+
+\begin{DoxyCompactList}\small\item\em get init velocity \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_ac0e8b72b12dbd9ab60a30653694aaf9f}{
+virtual Vector3 \hyperlink{class_sprite3_d_ac0e8b72b12dbd9ab60a30653694aaf9f}{getVelocity} ()}
+\label{class_sprite3_d_ac0e8b72b12dbd9ab60a30653694aaf9f}
+
+\begin{DoxyCompactList}\small\item\em get velocity \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a1ff479a3bcd231092258c5579137dec5}{
+virtual Ogre::Vector3 \hyperlink{class_sprite3_d_a1ff479a3bcd231092258c5579137dec5}{getPosition} ()}
+\label{class_sprite3_d_a1ff479a3bcd231092258c5579137dec5}
+
+\begin{DoxyCompactList}\small\item\em get sprite position \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a5ebfb5debefc23afaf422b7a2a6aa77e}{
+virtual float \hyperlink{class_sprite3_d_a5ebfb5debefc23afaf422b7a2a6aa77e}{getVision} ()}
+\label{class_sprite3_d_a5ebfb5debefc23afaf422b7a2a6aa77e}
+
+\begin{DoxyCompactList}\small\item\em get sprite vision region \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a4de21268206ed7fd35fa35f248e654bb}{
+SceneNode $\ast$ \hyperlink{class_sprite3_d_a4de21268206ed7fd35fa35f248e654bb}{getSceneNode} ()}
+\label{class_sprite3_d_a4de21268206ed7fd35fa35f248e654bb}
+
+\begin{DoxyCompactList}\small\item\em get scene node \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_ad372b85976d303d252780539c53a4063}{
+virtual void \hyperlink{class_sprite3_d_ad372b85976d303d252780539c53a4063}{jump} (float force)}
+\label{class_sprite3_d_ad372b85976d303d252780539c53a4063}
+
+\begin{DoxyCompactList}\small\item\em do jump \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_ae85eaeb7b568fa67307583dc148d3542}{
+virtual void \hyperlink{class_sprite3_d_ae85eaeb7b568fa67307583dc148d3542}{trigger} (Ogre::Vector3 at)}
+\label{class_sprite3_d_ae85eaeb7b568fa67307583dc148d3542}
+
+\begin{DoxyCompactList}\small\item\em trigger sprite at the postion \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_aa388ec592c03f7078adeb0fced2e93dc}{
+virtual void \hyperlink{class_sprite3_d_aa388ec592c03f7078adeb0fced2e93dc}{decreaseHealth} (float power)}
+\label{class_sprite3_d_aa388ec592c03f7078adeb0fced2e93dc}
+
+\begin{DoxyCompactList}\small\item\em when accept a attack power, decrease sprite's health \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a0316f56e36b718d516221e77104a93df}{
+virtual void \hyperlink{class_sprite3_d_a0316f56e36b718d516221e77104a93df}{increaseHealth} (float power)}
+\label{class_sprite3_d_a0316f56e36b718d516221e77104a93df}
+
+\begin{DoxyCompactList}\small\item\em increase sprite's health \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a434ff8ff3ae66452b6844422e7ce4192}{
+virtual void \hyperlink{class_sprite3_d_a434ff8ff3ae66452b6844422e7ce4192}{setInitHealth} (float health)}
+\label{class_sprite3_d_a434ff8ff3ae66452b6844422e7ce4192}
+
+\begin{DoxyCompactList}\small\item\em set initial health and current health \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_ace4c762791e295372c378d349a098f0d}{
+virtual void \hyperlink{class_sprite3_d_ace4c762791e295372c378d349a098f0d}{setHealth} (float health)}
+\label{class_sprite3_d_ace4c762791e295372c378d349a098f0d}
+
+\begin{DoxyCompactList}\small\item\em set current health \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a785c33796edf7af7631e1bf614ffd8f1}{
+virtual float \hyperlink{class_sprite3_d_a785c33796edf7af7631e1bf614ffd8f1}{getHealth} ()}
+\label{class_sprite3_d_a785c33796edf7af7631e1bf614ffd8f1}
+
+\begin{DoxyCompactList}\small\item\em get health \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a34f86f811992dd667a7772087809850b}{
+virtual void \hyperlink{class_sprite3_d_a34f86f811992dd667a7772087809850b}{setAlive} (bool b)}
+\label{class_sprite3_d_a34f86f811992dd667a7772087809850b}
+
+\begin{DoxyCompactList}\small\item\em set alive \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a32094cf200bf2efd1bd911435662a4ee}{
+virtual bool \hyperlink{class_sprite3_d_a32094cf200bf2efd1bd911435662a4ee}{isAlive} ()}
+\label{class_sprite3_d_a32094cf200bf2efd1bd911435662a4ee}
+
+\begin{DoxyCompactList}\small\item\em get alive \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a6e9cffb5569f58d0ebbc7926a5363d4f}{
+virtual void \hyperlink{class_sprite3_d_a6e9cffb5569f58d0ebbc7926a5363d4f}{setAnimation} (Ogre::String name, bool loop=true)}
+\label{class_sprite3_d_a6e9cffb5569f58d0ebbc7926a5363d4f}
+
+\begin{DoxyCompactList}\small\item\em set animation for sprite \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a76c6a9955154543f3a39dbe6bfe9ed5e}{
+void \hyperlink{class_sprite3_d_a76c6a9955154543f3a39dbe6bfe9ed5e}{printAllAnimationName} ()}
+\label{class_sprite3_d_a76c6a9955154543f3a39dbe6bfe9ed5e}
+
+\begin{DoxyCompactList}\small\item\em print all animation name for an entity \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_aa287cd32f170e07c44aa10edeef53b24}{
+bool \hyperlink{class_sprite3_d_aa287cd32f170e07c44aa10edeef53b24}{hasAnimation} ()}
+\label{class_sprite3_d_aa287cd32f170e07c44aa10edeef53b24}
+
+\begin{DoxyCompactList}\small\item\em test if the entity has animation \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a9a3fedc184c5fc0188c811f746c35902}{
+bool \hyperlink{class_sprite3_d_a9a3fedc184c5fc0188c811f746c35902}{hasAnimationName} (Ogre::String name)}
+\label{class_sprite3_d_a9a3fedc184c5fc0188c811f746c35902}
+
+\begin{DoxyCompactList}\small\item\em test if the entity has the animation name \end{DoxyCompactList}\item 
+\hypertarget{class_sprite3_d_a4be0420e1e522e14eb9758e744576c68}{
+void \hyperlink{class_sprite3_d_a4be0420e1e522e14eb9758e744576c68}{disableAllAnimation} ()}
+\label{class_sprite3_d_a4be0420e1e522e14eb9758e744576c68}
+
+\begin{DoxyCompactList}\small\item\em disable all animation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_sprite3_d_abae9c6e9697fe85d89366465b5c51b6d}{
+\hyperlink{class_stage}{Stage} $\ast$ {\bfseries mStage}}
+\label{class_sprite3_d_abae9c6e9697fe85d89366465b5c51b6d}
+
+\item 
+\hypertarget{class_sprite3_d_a6cf8567dcf36599af9f1627bc02b3d28}{
+SceneNode $\ast$ {\bfseries mSceneNode}}
+\label{class_sprite3_d_a6cf8567dcf36599af9f1627bc02b3d28}
+
+\item 
+\hypertarget{class_sprite3_d_acf030534e299af8444f39a34129186bc}{
+AnimationState $\ast$ {\bfseries mAnimationState}}
+\label{class_sprite3_d_acf030534e299af8444f39a34129186bc}
+
+\item 
+\hypertarget{class_sprite3_d_a48ccfffcff13c9007bf64421fde4b485}{
+Entity $\ast$ {\bfseries mEntity}}
+\label{class_sprite3_d_a48ccfffcff13c9007bf64421fde4b485}
+
+\item 
+\hypertarget{class_sprite3_d_a418147a39e067fc35aa3df6ac22abeaf}{
+std::vector$<$ Ogre::Vector3 $>$ {\bfseries moveList}}
+\label{class_sprite3_d_a418147a39e067fc35aa3df6ac22abeaf}
+
+\item 
+\hypertarget{class_sprite3_d_adc6d4ea6bdcc17628607838020435027}{
+Ogre::Vector3 {\bfseries targetPosition}}
+\label{class_sprite3_d_adc6d4ea6bdcc17628607838020435027}
+
+\item 
+\hypertarget{class_sprite3_d_a3053bb9415b7fe0ba23dd9e4f837e097}{
+Ogre::Vector3 {\bfseries mInitDirection}}
+\label{class_sprite3_d_a3053bb9415b7fe0ba23dd9e4f837e097}
+
+\item 
+\hypertarget{class_sprite3_d_af12dd44ce92d6885c6cf815bc419de70}{
+Ogre::Vector3 {\bfseries mInitVelocity}}
+\label{class_sprite3_d_af12dd44ce92d6885c6cf815bc419de70}
+
+\item 
+\hypertarget{class_sprite3_d_a195313d51ed8e5102af11637cc78fa17}{
+Ogre::Vector3 {\bfseries mInitPosition}}
+\label{class_sprite3_d_a195313d51ed8e5102af11637cc78fa17}
+
+\item 
+\hypertarget{class_sprite3_d_a3d941fe9332bd818d3485c0d840f5949}{
+float {\bfseries mInitJumpForce}}
+\label{class_sprite3_d_a3d941fe9332bd818d3485c0d840f5949}
+
+\item 
+\hypertarget{class_sprite3_d_ae3180df1e704d0acd197d71199924701}{
+float {\bfseries mJumpTimePassed}}
+\label{class_sprite3_d_ae3180df1e704d0acd197d71199924701}
+
+\item 
+\hypertarget{class_sprite3_d_aea1aaf5d4ed361e5cc7d897bae2947b2}{
+float {\bfseries mJumpForce}}
+\label{class_sprite3_d_aea1aaf5d4ed361e5cc7d897bae2947b2}
+
+\item 
+\hypertarget{class_sprite3_d_a55fdde0d957bf11dd82f2287db4685c0}{
+Ogre::Vector3 {\bfseries mDirection}}
+\label{class_sprite3_d_a55fdde0d957bf11dd82f2287db4685c0}
+
+\item 
+\hypertarget{class_sprite3_d_a80f30765fdd54bf4f56aecd3f1cb9b68}{
+Ogre::Vector3 {\bfseries mQuaternion}}
+\label{class_sprite3_d_a80f30765fdd54bf4f56aecd3f1cb9b68}
+
+\item 
+\hypertarget{class_sprite3_d_abfe31ff353cdea7ff4f7df0dfc8fe383}{
+Ogre::Vector3 {\bfseries mEyePosition}}
+\label{class_sprite3_d_abfe31ff353cdea7ff4f7df0dfc8fe383}
+
+\item 
+\hypertarget{class_sprite3_d_a65907fcd6940a95ccfba8bc3a1f7394c}{
+Ogre::Vector3 {\bfseries mVelocity}}
+\label{class_sprite3_d_a65907fcd6940a95ccfba8bc3a1f7394c}
+
+\item 
+\hypertarget{class_sprite3_d_ab9112628fd9036975e86d0c32715ffea}{
+float {\bfseries mVision}}
+\label{class_sprite3_d_ab9112628fd9036975e86d0c32715ffea}
+
+\item 
+\hypertarget{class_sprite3_d_a68bd4ddd8949e59ec4036507aebf0388}{
+Real {\bfseries mTime}}
+\label{class_sprite3_d_a68bd4ddd8949e59ec4036507aebf0388}
+
+\item 
+\hypertarget{class_sprite3_d_a23db7d4f18e9d2cc4491a461b54ca380}{
+Real {\bfseries mLifeTime}}
+\label{class_sprite3_d_a23db7d4f18e9d2cc4491a461b54ca380}
+
+\item 
+\hypertarget{class_sprite3_d_a891d2f1ee7508a43b45841479ec6ece1}{
+bool {\bfseries mAlive}}
+\label{class_sprite3_d_a891d2f1ee7508a43b45841479ec6ece1}
+
+\item 
+\hypertarget{class_sprite3_d_a17fde143cdcd21acea54410339472009}{
+bool {\bfseries mIsFly}}
+\label{class_sprite3_d_a17fde143cdcd21acea54410339472009}
+
+\item 
+\hypertarget{class_sprite3_d_a70fcc40436b1bbefedfab26644cbf338}{
+Vector3 {\bfseries mOffset}}
+\label{class_sprite3_d_a70fcc40436b1bbefedfab26644cbf338}
+
+\item 
+\hypertarget{class_sprite3_d_a7166350ac4c369dc6dd5293162cc4b8d}{
+float {\bfseries mInitHealth}}
+\label{class_sprite3_d_a7166350ac4c369dc6dd5293162cc4b8d}
+
+\item 
+\hypertarget{class_sprite3_d_a65d61494568bd264afc3acf2e083091d}{
+float {\bfseries mHealth}}
+\label{class_sprite3_d_a65d61494568bd264afc3acf2e083091d}
+
+\item 
+\hypertarget{class_sprite3_d_a6293232630d7cd5dae22b89c931946f3}{
+float {\bfseries mInitLevel}}
+\label{class_sprite3_d_a6293232630d7cd5dae22b89c931946f3}
+
+\item 
+\hypertarget{class_sprite3_d_abf5a36c5263a50e3fc88bd02a9ff03ee}{
+float {\bfseries mLevel}}
+\label{class_sprite3_d_abf5a36c5263a50e3fc88bd02a9ff03ee}
+
+\item 
+\hypertarget{class_sprite3_d_a0df7ebc1bbbd01fbf4418173f977b823}{
+float {\bfseries mTowerTime}}
+\label{class_sprite3_d_a0df7ebc1bbbd01fbf4418173f977b823}
+
+\item 
+\hypertarget{class_sprite3_d_ad0dcae84ec23d92d7db3ec6d0d44d192}{
+float {\bfseries ATTime}}
+\label{class_sprite3_d_ad0dcae84ec23d92d7db3ec6d0d44d192}
+
+\item 
+\hypertarget{class_sprite3_d_aad772f47adf60813c729f3199929d7bc}{
+int {\bfseries mActionMode}}
+\label{class_sprite3_d_aad772f47adf60813c729f3199929d7bc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+3D Game Programming\par
+ My Name: �i���� Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com} 
+
+This class hold some basic function and attribue for a Sprite \par
+ to move around 3D environment. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Sprite3D.h\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Sprite3D.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Sprite3D\_\-Animation.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Sprite3D\_\-update.cpp\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/魔塔守護者/programs/final/source/Sprite3D\_\-walk.cpp\end{DoxyCompactItemize}

@@ -1,0 +1,187 @@
+material templateAlpha
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+                  scene_blend alpha_blend
+			texture_unit tex
+			{
+			}
+		}
+	}
+}
+
+material button32 : templateAlpha
+{ set_texture_alias tex button32.png}
+
+material button32.onClick : templateAlpha
+{ set_texture_alias tex button32_on.png}
+
+material button32.mouseOver : templateAlpha
+{ set_texture_alias tex button32_over.png}
+material rbutton32 : templateAlpha
+{ set_texture_alias tex rbutton32.png}
+
+material rbutton32.onClick : templateAlpha
+{ set_texture_alias tex rbutton32_on.png }
+
+material rbutton32.mouseOver : templateAlpha
+{ set_texture_alias tex rbutton32_over.png }
+
+material sparkMat : templateAlpha
+{ set_texture_alias tex sparkButton.png}
+
+material dinoMat : templateAlpha
+{ set_texture_alias tex dinoButton.tga}
+
+material smoothBlueMat : templateAlpha
+{ set_texture_alias tex smoothButtonBlue.png}
+
+material smoothBlueReflMat : templateAlpha
+{ set_texture_alias tex smoothButtonBlueReflect.png}
+
+material smoothRedMat : templateAlpha
+{ set_texture_alias tex smoothButtonRed.png }
+
+material smoothRedReflMat : templateAlpha
+{ set_texture_alias tex smoothButtonRedReflect.png }
+
+
+//plus material
+material plusMat : templateAlpha
+{ set_texture_alias tex plus.png}
+
+material plusMat.mouseOver
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+                  scene_blend alpha_blend
+                  depth_check off
+			texture_unit
+			{
+				anim_texture plus.png plusOn.png .1
+			}
+		}
+	}
+}
+material plusMat.onClick : templateAlpha
+{ set_texture_alias tex plusOn.png}
+
+//minus Material
+material minusMat : templateAlpha
+{ set_texture_alias tex minus.png}
+
+material minusMat.mouseOver
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+                  scene_blend alpha_blend
+                  depth_check off
+			texture_unit
+			{
+				anim_texture minus.png minusOn.png .1
+			}
+		}
+	}
+}
+material minusMat.onClick : templateAlpha
+{ set_texture_alias tex minusOn.png}
+
+
+
+material middleButtonMat : templateAlpha
+{ set_texture_alias tex redButton.png}
+
+material middleButtonMat.onClick : templateAlpha
+{ set_texture_alias tex redButtonOn.png}
+
+material middleButtonMat.mouseOver
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+                  scene_blend alpha_blend
+                  depth_check off
+			texture_unit
+			{
+				anim_texture redButtonOn.png redButton.png .1
+			}
+		}
+	}
+}
+
+material middleButtonMat.onRelease : templateAlpha
+{ set_texture_alias tex blueButton.png}
+
+
+material buildingMat : templateAlpha
+{ set_texture_alias tex building.png}
+
+material buildingMat.onClick : templateAlpha
+{ set_texture_alias tex buildingOn.png}
+
+
+
+material cow : templateAlpha
+{ set_texture_alias tex cow.png}
+
+ material opacity : templateAlpha
+{ set_texture_alias tex opacity.tga}
+
+material slider : templateAlpha
+{ set_texture_alias tex slider.tga}
+
+material slider.onClick : templateAlpha
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+                  scene_blend alpha_blend
+                  depth_check off
+			texture_unit
+			{
+				anim_texture slider_over.tga slider_on.tga .1
+			}
+		}
+	}
+}
+
+material slider.mouseOver : templateAlpha
+{ set_texture_alias tex slider_over.tga}
+
+material portHole : templateAlpha
+{ set_texture_alias tex porthole.tga}
+
+material backgroundMat : templateAlpha
+{ set_texture_alias tex tibet.bmp}
+
+material cursorMat1 : templateAlpha
+{ set_texture_alias tex cursor1.png}
+
+material cursorMat2 : templateAlpha
+{ set_texture_alias tex cursor2.png}
+
+material cursorMat3 : templateAlpha
+{ set_texture_alias tex cursor3.png}
+
+material cursorMat4 : templateAlpha
+{ set_texture_alias tex cursor4.png}
+
+material cursorMat5 : templateAlpha
+{ set_texture_alias tex cursor5.png}
+
+material cursorMat6 : templateAlpha
+{ set_texture_alias tex cursor6.png}
+

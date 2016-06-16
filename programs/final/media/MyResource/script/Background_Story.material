@@ -1,0 +1,213 @@
+
+
+
+material story/magic_field01
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+
+			texture_unit
+			{
+				texture magic_field01.jpg
+			}
+		}
+	}
+}
+
+
+material story/magic_field02
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+
+			texture_unit
+			{
+				texture magic_field02.jpg
+			}
+		}
+	}
+}
+
+
+
+material story/magic_field03
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+
+			texture_unit
+			{
+				texture magic_field03.jpg
+			}
+		}
+	}
+}
+
+
+material story/magic_field04
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+
+			texture_unit
+			{
+				texture magic_field04.jpg
+			}
+		}
+	}
+}
+
+
+
+material story/magic_field04_02
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+
+			texture_unit
+			{
+				texture magic_field04_02.jpg
+			}
+		}
+	}
+}
+
+material story/magic_field05
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+
+			texture_unit
+			{
+				texture magic_field05.jpg
+			}
+		}
+	}
+}
+
+
+material story/magic_field05_02
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+
+			texture_unit
+			{
+				texture magic_field05_02.jpg
+			}
+		}
+	}
+}
+
+
+material story/magic_field06
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+
+			texture_unit
+			{
+				texture magic_field06.jpg
+			}
+		}
+	}
+}
+
+
+material story/magic_field06_02
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+
+			texture_unit
+			{
+				texture magic_field06_02.jpg
+			}
+		}
+	}
+}
+
+
+
+material story/magic_field07
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+
+			texture_unit
+			{
+				texture magic_field07.jpg
+			}
+		}
+	}
+}
+
+
+
+material story/magic28
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+
+			texture_unit
+			{
+				texture magic28.jpg
+			}
+		}
+	}
+}

@@ -1,0 +1,91 @@
+\hypertarget{class_weapon_manager}{
+\section{WeaponManager Class Reference}
+\label{class_weapon_manager}\index{WeaponManager@{WeaponManager}}
+}
+
+
+3D Game Programming\par
+ My Name: ±i´º·Ó Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com}  
+
+
+
+
+{\ttfamily \#include $<$WeaponManager.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_weapon_manager_ac4132720ed9ec46d4f158f6baafee4c4}{
+virtual void \hyperlink{class_weapon_manager_ac4132720ed9ec46d4f158f6baafee4c4}{addWeapon} (string name, \hyperlink{class_weapon3_d}{Weapon3D} $\ast$weapon)}
+\label{class_weapon_manager_ac4132720ed9ec46d4f158f6baafee4c4}
+
+\begin{DoxyCompactList}\small\item\em add one weapon \end{DoxyCompactList}\item 
+\hypertarget{class_weapon_manager_a5c173a010ba6ec49bceda095de2ae3d1}{
+virtual void \hyperlink{class_weapon_manager_a5c173a010ba6ec49bceda095de2ae3d1}{update} (Ogre::FrameEvent \&evt)}
+\label{class_weapon_manager_a5c173a010ba6ec49bceda095de2ae3d1}
+
+\begin{DoxyCompactList}\small\item\em update all weapon \end{DoxyCompactList}\item 
+\hypertarget{class_weapon_manager_a673444e9e27d7418f2834c892fa2bf1b}{
+virtual \hyperlink{class_weapon3_d}{Weapon3D} $\ast$ \hyperlink{class_weapon_manager_a673444e9e27d7418f2834c892fa2bf1b}{getWeapon} (string name)}
+\label{class_weapon_manager_a673444e9e27d7418f2834c892fa2bf1b}
+
+\begin{DoxyCompactList}\small\item\em get weapon \end{DoxyCompactList}\item 
+\hypertarget{class_weapon_manager_a18aa550ec522aa6c6f252d214ec0a88c}{
+virtual void \hyperlink{class_weapon_manager_a18aa550ec522aa6c6f252d214ec0a88c}{setAllBulletDirectPosition} (\hyperlink{class_weapon3_d}{Weapon3D} $\ast$weapon, Vector3 position)}
+\label{class_weapon_manager_a18aa550ec522aa6c6f252d214ec0a88c}
+
+\begin{DoxyCompactList}\small\item\em set all bulet direction to position \end{DoxyCompactList}\item 
+\hypertarget{class_weapon_manager_a762d7c3ce3265f3b5cb3efe968ca5c50}{
+virtual void \hyperlink{class_weapon_manager_a762d7c3ce3265f3b5cb3efe968ca5c50}{setAllBulletDirection} (\hyperlink{class_weapon3_d}{Weapon3D} $\ast$weapon, Vector3 direction)}
+\label{class_weapon_manager_a762d7c3ce3265f3b5cb3efe968ca5c50}
+
+\begin{DoxyCompactList}\small\item\em set all bulet direction \end{DoxyCompactList}\item 
+\hypertarget{class_weapon_manager_a8bdf1de0d6b4297d39dc6a6cb7da6a30}{
+virtual void \hyperlink{class_weapon_manager_a8bdf1de0d6b4297d39dc6a6cb7da6a30}{setAllBulletDirection} (\hyperlink{class_weapon3_d}{Weapon3D} $\ast$weapon, float theta, float alpha)}
+\label{class_weapon_manager_a8bdf1de0d6b4297d39dc6a6cb7da6a30}
+
+\begin{DoxyCompactList}\small\item\em set all bulet direction \end{DoxyCompactList}\item 
+\hypertarget{class_weapon_manager_acc48478545aa17c26217cf95c0edaff6}{
+virtual bool \hyperlink{class_weapon_manager_acc48478545aa17c26217cf95c0edaff6}{hit} (std::map$<$ string, \hyperlink{class_sprite3_d}{Sprite3D} $\ast$ $>$ sprites, float radius)}
+\label{class_weapon_manager_acc48478545aa17c26217cf95c0edaff6}
+
+\begin{DoxyCompactList}\small\item\em sprites that hited by sprite in this sprite manager within a radius \end{DoxyCompactList}\item 
+\hypertarget{class_weapon_manager_a2becf5cfadf0a97d440408ef6ae89346}{
+virtual bool \hyperlink{class_weapon_manager_a2becf5cfadf0a97d440408ef6ae89346}{hit} (\hyperlink{class_sprite3_d}{Sprite3D} $\ast$sprite, float radius)}
+\label{class_weapon_manager_a2becf5cfadf0a97d440408ef6ae89346}
+
+\begin{DoxyCompactList}\small\item\em sprite that hited by sprite in this sprite manager within a radius \end{DoxyCompactList}\item 
+\hypertarget{class_weapon_manager_adce71bb0ba0679204657acf85c7940ca}{
+virtual bool \hyperlink{class_weapon_manager_adce71bb0ba0679204657acf85c7940ca}{hit} (std::map$<$ string, \hyperlink{class_sprite3_d}{Sprite3D} $\ast$ $>$ sprites)}
+\label{class_weapon_manager_adce71bb0ba0679204657acf85c7940ca}
+
+\begin{DoxyCompactList}\small\item\em sprites that hited by sprite in this sprite manager \end{DoxyCompactList}\item 
+\hypertarget{class_weapon_manager_a27cbe737939fee8b77554ded5f1fe894}{
+virtual bool \hyperlink{class_weapon_manager_a27cbe737939fee8b77554ded5f1fe894}{hit} (\hyperlink{class_sprite3_d}{Sprite3D} $\ast$sprite)}
+\label{class_weapon_manager_a27cbe737939fee8b77554ded5f1fe894}
+
+\begin{DoxyCompactList}\small\item\em sprite that hited by sprite in this sprite manager \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_weapon_manager_af0f107adf72b1f690946896f5e91e0d0}{
+std::map$<$ string, \hyperlink{class_weapon3_d}{Weapon3D} $\ast$ $>$ {\bfseries mWeaponMap}}
+\label{class_weapon_manager_af0f107adf72b1f690946896f5e91e0d0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+3D Game Programming\par
+ My Name: ±i´º·Ó Chang, Ching-\/Chao\par
+ My ID: 9857515\par
+ My Email: \href{mailto:dorgonman@hotmail.com}{\tt dorgonman@hotmail.com} 
+
+This class handle for weapon manager 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/é­”å¡”å®ˆè­·è€…/programs/final/source/WeaponManager.h\item 
+D:/workspace/Dropbox/workspace/OGRE/final\_\-project/é­”å¡”å®ˆè­·è€…/programs/final/source/WeaponManager.cpp\end{DoxyCompactItemize}

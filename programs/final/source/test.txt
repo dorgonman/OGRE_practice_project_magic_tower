@@ -1,0 +1,89 @@
+fish
+jaiqua
+ogrehead
+penguin
+razor
+robot
+
+
+event1 => 3 ~ 24  =>robot, 追玩家
+event2 =>  5   => 魚 => 一次射3顆子彈 => 追玩家
+event3 => 10   => 快速企鵝 * 2 => 攻擊玩家
+event4 => 20 => ogrehead * 1 => 子追玩家，子彈射擊間隔 = 0.1
+          25 => event2
+	  26 => event1
+event5 => 30 => 快速企鵝 * 2 =>從另一個地方出現
+
+event6 => 35 => ogrehead，攻擊塔
+
+event7 => 50 => ogrehead * 5 => 5方攻擊
+
+story mode => 60 => boss big ogre head appear =>
+
+
+
+
+
+void Stage1::setEvent3(){
+
+	for(int i = 0; i < 3; i++){
+		String name;
+		//genNameUsingIndex("ogrehead", i, name);
+		genNameUsingIndex("fish", i, name);
+		Sprite3D* p = mMonsterMgr->getSprite(name);
+		if(p){
+			Vector3 org(2750 + (float)i * 50, 40, 750 + (float)i * 50);
+			p->setInitPosition(org);
+			p->setInitVelocity(Vector3(100, 100, 100));
+			p->setInitHealth(20);
+			p->setAlive(true);
+		}
+	}
+
+
+	Weapon3D* weapon = mMonsterWeaponMgr->getWeapon("gun0");
+	if(weapon){
+		weapon->setInitVelocity(Ogre::Vector3(500, 500, 500));
+		weapon->setBulletLifeTime(5);
+		weapon->setCoolDown(1);
+	}
+	//weapon->setBulletMaterialName("my_game/bullet1");
+
+}
+
+
+void Stage1::doEvent1(){
+	Weapon3D* weapon = mMonsterWeaponMgr->getWeapon("gun0");
+
+	if(weapon){
+		if(weapon->mTime >= weapon->mCoolDown){
+			for(int i = 0; i < 3; i++){
+				String name;
+				//genNameUsingIndex("ogrehead", i, name);
+				genNameUsingIndex("robot", i, name);
+				Sprite3D* p = mMonsterMgr->getSprite(name);
+				if(p->isAlive()){
+					Vector3 monsterPosition =  mMonsterMgr->getPosition(name);
+					Vector3 playerPosition = mPlayerSpr->getPosition();
+					playerPosition.y = 0;
+					monsterPosition.y = 0;
+					float length = playerPosition.distance(monsterPosition);
+					Vector3 direction =  mPlayerSpr->getPosition() - mMonsterMgr->getPosition(name);
+					direction.normalise();
+					if(length < 700){
+							weapon->setInitDirection(direction);
+							weapon->trigger(mMonsterMgr->getPosition(name));
+							mEngine->mAudioMgr->play("monster_tama2");
+					}else{
+						mAIEng->runTo(p, mPlayerSpr->getPosition());
+
+					}
+
+				}
+			}
+		}
+
+	}
+	
+}
+

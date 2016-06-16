@@ -1,0 +1,291 @@
+material my_game/title
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+
+			texture_unit
+			{
+				texture title.png
+			}
+		}
+	}
+}
+
+
+
+material my_game/intro
+{
+	technique
+	{
+		pass
+		{
+			depth_write off
+			scene_blend alpha_blend
+
+
+			texture_unit
+			{
+				texture game_intro.png
+			}
+
+		}
+	}
+}
+
+
+material my_game/no_texture
+{
+	technique
+	{
+		pass
+		{
+			depth_write off
+			scene_blend alpha_blend
+		}
+	}
+}
+
+
+
+
+material my_game/game_over
+{
+	technique
+	{
+		pass
+		{
+			depth_write off
+			scene_blend alpha_blend
+
+
+			texture_unit
+			{
+				texture game_over.png
+			}
+
+		}
+	}
+}
+
+
+
+material my_game/stage1_win
+{
+	technique
+	{
+		pass
+		{
+			depth_write off
+			scene_blend alpha_blend
+
+
+			texture_unit
+			{
+				texture stage1_clear.png
+			}
+
+		}
+	}
+}
+
+
+material my_game/stage2_win
+{
+	technique
+	{
+		pass
+		{
+			depth_write off
+			scene_blend alpha_blend
+
+
+			texture_unit
+			{
+				texture stage2_clear.png
+			}
+
+		}
+	}
+}
+
+material my_game/stage3_win
+{
+	technique
+	{
+		pass
+		{
+			depth_write off
+			scene_blend alpha_blend
+
+
+			texture_unit
+			{
+				texture stage3_clear.png
+			}
+
+		}
+	}
+}
+
+
+material Examples/Digits
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_write off
+
+			texture_unit
+			{
+				texture my_digits.png
+			}
+		}
+	}
+}
+
+material my_game/LifeBar
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+			texture_unit
+			{
+				texture lifebar.jpg
+			}
+		}
+	}
+}
+
+material mat/player_icon
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+			texture_unit
+			{
+				texture player_icon.png
+			}
+		}
+	}
+}
+
+
+
+
+
+material mat/nway_icon
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+			texture_unit
+			{
+				texture nway_icon.png
+			}
+		}
+	}
+}
+
+
+
+material mat/trace_icon
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+			texture_unit
+			{
+				texture trace_icon.png
+			}
+		}
+	}
+}
+
+
+
+
+material mat/tower
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0
+			emissive 1.0 1.0 1.0
+
+			texture_unit
+			{
+				texture magic.png
+			}
+		}
+	}
+}
+
+
+
+material mat/green
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.0 1.0 0.0
+			diffuse 0.0 1.0 0.0
+			specular 0.0 1.0 0.0
+		}
+	}
+}
+
+
+
+material mat/red
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 0.0 0.0
+			diffuse 1.0 0.0 0.0
+			specular 1.0 0.0 0.0
+		}
+	}
+}
+
+material mat/blue
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.0 0.0 1.0
+			diffuse 0.0 0.0 1.0
+			specular 0.0 0.0 1.0
+		}
+	}
+}
